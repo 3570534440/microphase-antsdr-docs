@@ -11,9 +11,8 @@ python:
 
 sphinx:
   builder: html
-  configuration: source/conf.py  # 任意一个都可以
+  configuration: source/conf.py 
 
-# 自定义构建命令
 build:
   commands:
     - python -m pip install --upgrade pip setuptools
