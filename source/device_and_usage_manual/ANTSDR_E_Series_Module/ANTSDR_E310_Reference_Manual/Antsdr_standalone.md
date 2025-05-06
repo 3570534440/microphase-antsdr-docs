@@ -1,6 +1,6 @@
 ## Antsdr standalone (no_OS) 
 
-[[中文]](../../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr_standalone_cn.html)
+[[中文]](../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr_standalone_cn.html)
 
 ### antsdr-no-OS
 [Latest project address](https://github.com/MicroPhase/antsdr_standalone)
