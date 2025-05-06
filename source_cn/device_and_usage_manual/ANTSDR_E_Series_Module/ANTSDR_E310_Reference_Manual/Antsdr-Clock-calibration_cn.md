@@ -1,6 +1,6 @@
 ## Antsdr 时钟校准
 
-[[English]](../../../../../en/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-Clock-calibration.html)
+[[English]](../../../../../html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-Clock-calibration.html)
 
 ⽤⼾需要进⼊系统对iio设备⽂件进⾏操作，或者在上位机通过libiio接口访
 问名字为ad5660mp的iio设备。这⾥通过进⼊系统来校准时钟。

@@ -1,6 +1,6 @@
 ## Antsdr fw patch 
 
-[[English]](../../../../../en/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-fw-patch.html)
+[[English]](../../../../../html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-fw-patch.html)
 
 该存储库用于制作 Microphase 软件无线电设备固件。
 

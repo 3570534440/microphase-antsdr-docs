@@ -1,7 +1,7 @@
 ## E310 openwifi
 
 
-[[中文]](../../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi_cn.html)
+[[中文]](../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi_cn.html)
 
 ### ●1. Overview
 Openwifi is an open source project based on ZYNQ7000+AD936x. This project implements an IP core for processing wifi signals on FPGA to meet the delay requirements of wifi transmission. This project also implements the driver of openwifi IP on linux. Based on this open source project, users can understand the underlying working principle of wifi. Interested users can learn more about it on the github homepage of the project. The Github repository address is as follows.

@@ -1,6 +1,6 @@
 ## Antsdr fw patch 
 
-[[中文]](../../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-fw-patch_cn.html)
+[[中文]](../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-fw-patch_cn.html)
 
 This Repository is used to make Microphase software radio device firmware. 
 

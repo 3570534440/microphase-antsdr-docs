@@ -1,6 +1,6 @@
 ## Antsdr Clock calibration
 
-[[中文]](../../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-Clock-calibration_cn.html)
+[[中文]](../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-Clock-calibration_cn.html)
 
 Users need to enter the system to operate the iio device file, or access the iio device named ad5660mp through the libiio interface on the host computer. Here, the clock is calibrated by entering the system.
 

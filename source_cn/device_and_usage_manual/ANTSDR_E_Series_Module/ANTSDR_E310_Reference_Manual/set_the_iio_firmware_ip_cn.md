@@ -1,6 +1,6 @@
 # 设置固件IP
 
-[[English]](../../../../../en/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/set_the_iio_firmware_ip.html)
+[[English]](../../../../../html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/set_the_iio_firmware_ip.html)
 
 如果您想在使用**plutosdr**兼容固件时使用多个ANTSDR-E310设备，您将需要本指南来设置mac和ip地址。
 

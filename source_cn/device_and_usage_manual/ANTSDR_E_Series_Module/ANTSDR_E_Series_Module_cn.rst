@@ -1,6 +1,6 @@
 快速入门
 =======================
-`[English] <../../../../en/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E_Series_Module.html>`_
+`[English] <../../../../html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E_Series_Module.html>`_
 
 本文档旨在帮助您快速了解如何使用ANTSDR,包括软件和硬件。
 

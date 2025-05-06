@@ -1,6 +1,6 @@
 ## E310 libiio
 
-[[中文]](../../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_libiio_cn.html)
+[[中文]](../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_libiio_cn.html)
 
 ### ●1. Overview
 

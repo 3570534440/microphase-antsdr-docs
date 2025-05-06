@@ -1,7 +1,7 @@
 ## E310 Hardware Manual
 
 
-[[中文]](../../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_Reference_Manual_cn.html)
+[[中文]](../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_Reference_Manual_cn.html)
 
 ### ●1. 概述
 

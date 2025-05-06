@@ -37,8 +37,8 @@ help:
 
 # Build English docs
 html:
-	@$(SPHINXBUILD) -M html source $(BUILDDIR)/en $(SPHINXOPTS) $(O)
-	@$(SPHINXBUILD) -M html source_cn $(BUILDDIR)/cn $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -M html source $(BUILDDIR)/html $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -M html source_cn $(BUILDDIR)/html/cn $(SPHINXOPTS) $(O)
 # Build Chinese docs
 #cn:
 	
