@@ -1,7 +1,7 @@
 ## E310 RF parameters
 
 
-[[中文]](../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_RF_parameters_cn.html)
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_RF_parameters_cn.html)
 
 ### E310 Tx Power
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310_rf_power.png)

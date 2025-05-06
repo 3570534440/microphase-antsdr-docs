@@ -5,8 +5,10 @@
 
 ANTSDR 用户手册
 =========================================
-`[English] <../../index.html>`_
+.. raw:: html
 
+    <a href="../index.html">[English]</a>
+    
 这里是微相ANTSDR文档中心。ANTSDR系列产品包括E系列、U系列、T系列和AI系列。E系列包括E310、E200、E310V2(E316),U系列包括U220、U200。T系列包括T310、T355、T510。AI系列包括ANTSDR-Neural A1。
 
 本文档包含ANTSDR系列的所有用途。请在下面的目录中选择您的目标。

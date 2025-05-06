@@ -1,7 +1,7 @@
 # Set Firmware IP
 
 
-[[中文]](../../../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/set_the_iio_firmware_ip_cn.html)
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/set_the_iio_firmware_ip_cn.html)
 
 If you want to use multiple ANTSDR-E310 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
 ## QSPI Flash boot mode

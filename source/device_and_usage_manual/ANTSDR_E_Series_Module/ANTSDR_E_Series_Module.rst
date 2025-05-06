@@ -1,6 +1,6 @@
 Get Started
 =======================
-`[中文] <../../cn/html/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E_Series_Module_cn.html>`_
+`[中文] <../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E_Series_Module_cn.html>`_
 
 This document is designed to help you quickly understand how to use ANTSDR, including software and hardware.
 
