@@ -5,9 +5,11 @@
 
 ANTSDR Usage Guidelines
 =========================================
+
 .. raw:: html
 
     <a href="cn/index.html"> [中文] </a>
+
 
 This is the microphase ANTSDR document center. The ANTSDR series products include the E series, U series, T series and AI series. The E series includes E310, E200, E310V2 (E316), the U series includes U220, U200. The T series includes T310, T355, T510. The AI ​​series includes ANTSDR-Neural A1.
 
