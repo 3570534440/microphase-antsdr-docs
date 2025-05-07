@@ -172,7 +172,7 @@ The FMCOMMS-2 IIO block will report its processing as complete: the blocks conne
 
 ### ●4. Using the fmcomms blocks
 
-Before use, you need to use the fmcomms firmware. You can find the usage of the fmcomms firmware here [Unpacking examination](./AntsdrE310_fmcomms.md)
+Before use, you need to use the fmcomms firmware. You can find the usage of the fmcomms firmware here [fmcomms](./AntsdrE310_fmcomms.md)
 
 The FMCOMMS-2 IIO blocks can run over the IP network or USB. By setting the “IIO context URI” parameter to the IP address of the target board, you can stream samples from/to the remote board
 

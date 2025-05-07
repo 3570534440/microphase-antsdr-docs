@@ -195,6 +195,12 @@ E316
 
    ANTSDR_E316_Reference_Manual/Antsdr_standalone_cn
 
+
+.. toctree::
+   :maxdepth:2
+   :titlesonly:
+
+   ANTSDR_E316_Reference_Manual/fw-patch_cn
 .. toctree::
    :maxdepth:2
    :titlesonly:

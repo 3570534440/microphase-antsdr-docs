@@ -11,7 +11,7 @@ This chapter will install the PlutoSDR hardware support package. All Matlab-rela
 
 If you want to use MATLAB under Ubuntu, the steps are the same as those for Windows.
 
-If you are using antsdr for the first time, you need to read [Unpacking examination](./AntsdrE310_First_boot_check.md)
+If you are using antsdr for the first time, you need to read [Unpacking examination](./AntsdrE310_Unpacking_examination.md)
 
 ### ●2. Install the driver
 

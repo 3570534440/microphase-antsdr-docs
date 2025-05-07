@@ -1,10 +1,10 @@
-## E316 Hardware Manual
+## E200 UHD
 
 ### ●1. 概述
 
 E310 是一款面向创客和SDR爱好者同时也可以满足专业应用场景的软件无线电,支持70 MHz 到 6 GHz 的宽频段射频信号收发，既可以作为 USB 外设使用，也可以通过编程实现脱机运行。众多的开源项目支持和学习教程，让客户接触更多应用成为可能。
 
-![e310](./ANTSDR_E316_Reference_Manual.assets/e316.jpg)
+![e310](./ANTSDR_E310_Reference_Manual.assets/e310.jpg)
 
   #### ○资源特性：
 

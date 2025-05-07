@@ -1,4 +1,6 @@
-## E200 openwifi
+## E310 硬件手册
+
+[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_Reference_Manual.html)
 
 ### ●1. 概述
 
@@ -31,27 +33,3 @@ E310 是一款面向创客和SDR爱好者同时也可以满足专业应用场景
 - 集成射频前端（AD9361：70 MHz - 6 GHz，AD9363：325 MHz - 3.8 GHz）
 
 - 可变模拟带宽（AD9361：200 kHz - 56 MHz，AD9363：200 kHz - 20 MHz）
-
-#### ○软件特性：
-
-- ARM 核心可运行完整的 Linux 系统
-- 主机与 E310 之间可通过 libiio接口进行通信
-
-### ●2. 开箱检测
-
-#### ○2.1 物品清单
-
-#### ○2.2 ANTSDR 驱动软件安装
-
-#### ○2.3 连接到电脑
-
-#### ○2.4 ANTSDR 网口测试
-
-#### ○2.5 网络数据传输
-
-### ●3. 
-#### ○3.1 
-
-#### ○3.2 
-
-#### ○3.3 

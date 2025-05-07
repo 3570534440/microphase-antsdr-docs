@@ -1,11 +1,11 @@
 # Set Firmware IP
 
 ## ●pluto firmware
-If you want to use multiple ANTSDR-E316 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
+If you want to use multiple ANTSDR-E200 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
 ### QSPI Flash boot mode
 #### ○Set mac address
 1. 
-    You can enter the linux system of E316 through ssh or serial port tool. The default ip is **192.168.1.10** and the baud rate of the serial port is **115200**. when using the network port, please make sure you can ping the board. 
+    You can enter the linux system of E200 through ssh or serial port tool. The default ip is **192.168.1.10** and the baud rate of the serial port is **115200**. when using the network port, please make sure you can ping the board. 
 
     The **default username and password**:
     

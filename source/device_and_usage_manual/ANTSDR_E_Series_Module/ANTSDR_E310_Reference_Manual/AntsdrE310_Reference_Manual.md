@@ -3,34 +3,34 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_Reference_Manual_cn.html)
 
-### ●1. 概述
+### ●1. Overview
 
-E310 是一款面向创客和SDR爱好者同时也可以满足专业应用场景的软件无线电,支持70 MHz 到 6 GHz 的宽频段射频信号收发，既可以作为 USB 外设使用，也可以通过编程实现脱机运行。众多的开源项目支持和学习教程，让客户接触更多应用成为可能。
+E310 is designed for customers who love SDR at the same time, and supports 70 MHz to 6 GHz signal transmission, which can be used for commercial use without any USB connection. When used externally, it is also possible to proceed with the actual operation of the machine. More than 100 original items support Japanese learning courses, and more customers can contact you for further development.
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310.jpg)
 
-  #### ○资源特性：
+  #### ○Hardware Resources
 
-- Xilinx Zynq 7020（集成双核 ARM Cortex A9 和 Artix-7 FPGA）
+- Xilinx Zynq-7020 (integrated dual-core ARM Cortex-A9 and Artix-7 FPGA)
 
 - Analog Devices AD9361/9363 
 
-- 1 个千兆以太网接口
+- 1 trillion internet connections
 
-- 1个TYPE-C USB2.0接口
+- 1个TYPE-C USB 2.0 connector
 
-- 1个TYPE-C USB-JTAG&UART接口
+- 1个TYPE-C USB-JTAG&UART connection
 
-- 1个30-Pin 2.54mm间距GPIO拓展口
+- 1个30-Pin 2.54mm GPIO expansion port
 
-- 1个20-Pin 2.54mm间距GPIO拓展口
+- 1个20-Pin 2.54mm GPIO expansion port
 
-- 1个外部 PPS/10MHz 参考输入接口
+- 1 external PPS/10MHz reference entrance
 
-- 2 个发射通道和 2 个接收通道，支持半双工或全双工
+- 2 transmit channels and 2 receive channels, supporting half-duplex or full-duplex operation.
 
-- 灵活采样率的 12 位 ADC 和 DAC
+- Flexible sampling rate 12-bit ADC and DAC
 
-- 集成射频前端（AD9361：70 MHz - 6 GHz，AD9363：325 MHz - 3.8 GHz）
+- Integrated RF front-end (AD9361: 70 MHz – 6 GHz, AD9363: 325 MHz – 3.8 GHz)
 
-- 可变模拟带宽（AD9361：200 kHz - 56 MHz，AD9363：200 kHz - 20 MHz）
+- Tunable analog bandwidth (AD9361: 200 kHz – 56 MHz, AD9363: 200 kHz – 20 MHz)
