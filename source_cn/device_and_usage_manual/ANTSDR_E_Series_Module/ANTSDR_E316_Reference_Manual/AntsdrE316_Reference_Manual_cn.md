@@ -1,4 +1,4 @@
-## E310 硬件手册
+## E316 硬件手册
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_Reference_Manual.html)
 

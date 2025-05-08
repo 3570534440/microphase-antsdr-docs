@@ -1,4 +1,4 @@
-## E310 RF 
+## E316 RF 
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_RF_parameters.html)
 

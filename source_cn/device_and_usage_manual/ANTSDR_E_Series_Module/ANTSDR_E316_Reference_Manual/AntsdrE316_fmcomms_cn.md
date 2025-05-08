@@ -1,4 +1,4 @@
-## E310 fmcomms 固件
+## E316 fmcomms 固件
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_fmcomms.html)
 

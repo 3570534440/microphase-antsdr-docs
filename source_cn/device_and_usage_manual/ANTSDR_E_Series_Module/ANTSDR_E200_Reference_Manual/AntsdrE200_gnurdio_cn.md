@@ -1,4 +1,4 @@
-## E310 gnuradio 
+## E200 gnuradio 
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.html)
 
