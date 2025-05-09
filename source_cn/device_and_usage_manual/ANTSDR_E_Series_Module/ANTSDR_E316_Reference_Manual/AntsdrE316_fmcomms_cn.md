@@ -1,6 +1,6 @@
 ## E316 fmcomms 固件
 
-[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_fmcomms.html)
+[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E316_Reference_Manual/AntsdrE316_fmcomms.html)
 
 ### ●1. 概述
 

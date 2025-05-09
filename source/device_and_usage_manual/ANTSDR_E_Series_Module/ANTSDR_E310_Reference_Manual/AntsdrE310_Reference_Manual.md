@@ -3,13 +3,13 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_Reference_Manual_cn.html)
 
-### ●1. Overview
+### Overview
 
 E310 is designed for customers who love SDR at the same time, and supports 70 MHz to 6 GHz signal transmission, which can be used for commercial use without any USB connection. When used externally, it is also possible to proceed with the actual operation of the machine. More than 100 original items support Japanese learning courses, and more customers can contact you for further development.
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310.jpg)
 
-  #### ○Hardware Resources
+### Hardware Resources
 
 - Xilinx Zynq-7020 (integrated dual-core ARM Cortex-A9 and Artix-7 FPGA)
 

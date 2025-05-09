@@ -1,6 +1,6 @@
 ## E200 gnuradio 
 
-[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.html)
+[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_gnurdio.html)
 
 ### ●1. 概述
 [Gnuradio](https://www.gnuradio.org/) 是一个开源软件

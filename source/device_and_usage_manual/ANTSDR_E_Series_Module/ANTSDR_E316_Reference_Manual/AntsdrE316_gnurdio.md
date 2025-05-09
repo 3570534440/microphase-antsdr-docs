@@ -1,5 +1,8 @@
 ## E316 gnuradio
 
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E316_Reference_Manual/AntsdrE316_gnurdio_cn.html)
+
+
 ### ●1. Overview
 [Gnuradio](https://www.gnuradio.org/) is an open source software
 

@@ -1,6 +1,6 @@
 ## E200 libiio 使用
 
-[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_libiio.html)
+[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_libiio.html)
 
 ### ●1. 概述
 

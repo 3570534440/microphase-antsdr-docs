@@ -1,4 +1,5 @@
 # Set Firmware IP
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E316_Reference_Manual/set_the_iio_firmware_ip.html)
 
 ## ●pluto firmware
 If you want to use multiple ANTSDR-E316 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.

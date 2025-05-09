@@ -1,5 +1,7 @@
 ## E200 gnuradio
 
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_gnurdio_cn.html)
+
 ### ●1. Overview
 [Gnuradio](https://www.gnuradio.org/) is an open source software
 

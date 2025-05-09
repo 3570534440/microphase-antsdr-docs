@@ -1,6 +1,6 @@
 ## E200 fmcomms 固件
 
-[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_fmcomms.html)
+[[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_fmcomms.html)
 
 ### ●1. 概述
 
