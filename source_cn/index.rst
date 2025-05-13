@@ -6,7 +6,7 @@
 ANTSDR 使用指南
 =========================================
 
-.. raw:: html+
+.. raw:: html
 
     <a href="../index.html">[English]</a>
 
