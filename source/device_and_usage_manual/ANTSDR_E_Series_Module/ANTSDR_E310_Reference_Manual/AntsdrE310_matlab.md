@@ -76,3 +76,64 @@ Then click Apply, and then click Info to see the information of the current devi
 ![E310](./ANTSDR_E310_Reference_Manual.assets/matlab_demo_info.png)
 
 
+### Connect to MATLAB using fmcomms mirror
+
+If you are not familiar with using fmcomms images on E310, you can first read[antsdr fmcomms](./AntsdrE310_fmcomms_cn.md) chapter.
+The author installed the matlab2021.a version here, and the 2021a version is recommended.
+
+Open matlab and download the toolkit corresponding to the matlab version from the website. [下载工具包](https://github.com/analogdevicesinc/TransceiverToolbox/releases). Then double-click in MATLAB to install it.
+
+Set the computer IP to 192.168.1.100. The computer can now ping the device.
+Create a new script in matlab and enter the following code to test the connection
+```
+clc;
+clear all;
+close all;
+amplitude = 2^12; frequency = 0.12e6;
+swv1 = dsp.SineWave(amplitude, frequency);
+swv1.ComplexOutput = true;
+swv1.SamplesPerFrame = 1e4*10;
+swv1.SampleRate = 3e6;
+y = swv1();
+
+%% Tx set up
+tx = adi.ADRV9009.Tx('uri','ip:192.168.1.10');
+tx.CenterFrequency = 1e9;
+tx.DataSource = 'DMA';
+tx.EnableCyclicBuffers = true;
+tx.AttenuationChannel0 = -10;
+tx.EnabledChannels = [1,2];
+tx([y,y]);
+
+%% Rx set up
+rx = adi.ADRV9009.Rx('uri','ip:192.168.1.10');
+rx.CenterFrequency = tx.CenterFrequency;
+rx.EnabledChannels = [1,2];
+rx.kernelBuffersCount = 1;
+
+%% Run
+for k=1:10
+    valid = false;
+    while ~valid
+        [out, valid] = rx();
+    end
+end
+tx.release();
+rx.release();
+
+figure(1); 
+plot(0:numel(y)-1, real(y), 'r', 0:numel(y)-1, imag(y), 'b'); 
+xlim([0 250]); 
+xlabel('sample index'); 
+grid on;
+
+out=out';
+figure(2); 
+plot(real(out(1,1:1024)));
+hold on;
+plot(imag(out(1,1:1024)));
+figure(3) 
+plot(real(out(2,1:1024)));
+hold on;
+plot(imag(out(2,1:1024)))
+```

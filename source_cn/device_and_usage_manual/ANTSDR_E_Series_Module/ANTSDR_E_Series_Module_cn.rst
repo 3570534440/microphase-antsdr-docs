@@ -168,7 +168,7 @@ E200
    :maxdepth:2
    :titlesonly:
 
-   ANTSDR_E200_Reference_Manual/set_the_iio_firmware_ip_cn
+   ANTSDR_E200_Reference_Manual/set_the_iio_firmware_ip
 E316 
 =======================
 .. toctree::
@@ -244,4 +244,4 @@ E316
    :maxdepth:2
    :titlesonly:
 
-   ANTSDR_E316_Reference_Manual/set_the_iio_firmware_ip_cn
+   ANTSDR_E316_Reference_Manual/set_the_iio_firmware_ip

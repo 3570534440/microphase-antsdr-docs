@@ -2,7 +2,7 @@
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi.html)
 
-### ●1. Overview
+### ●1. 概述
 
 openwifi 是一个基于 ZYNQ7000+AD936x 的一个开源项目，该项目在 FPGA 上实现了一个用于处理 wifi 信号的 IP 核，以满足 wifi 传输时所需要的延时要求。该项目同时还实现了 linux 上对 openwifi IP 的驱动的实现，基于这个开源项目，用户可以了解 wifi 的底层的工作原理，感兴趣的用户可以在该项目的 github 主页上了解更多信息。Github 的仓库地址如下：
 [https://github.com/open-sdr/openwifi](https://github.com/open-sdr/openwifi)
@@ -22,7 +22,7 @@ sudo dd bs=512 count=31116288 if=openwifi-xyz.img of=/dev/your_sdcard_dev
 (为了获得正确的计数值，最好通过“fdisk -l img_filename”检查.img文件的实际情况")
 ```
 SD 卡刻录完成后，
-将 SD 卡插入电脑，并将启动文件复制到 SD 卡的 BOOT 分区。
+将 SD 卡插入电脑，并将启动文件复制到 SD 卡的 BOOT 分区。启动文件的位置在BOOT分区下openwifi目录中，这个目录中存放了不同设备的启动文件，ANTSDR E310设备启动文件在antsdr目录中
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310_openwifi_boot_file.png)
 

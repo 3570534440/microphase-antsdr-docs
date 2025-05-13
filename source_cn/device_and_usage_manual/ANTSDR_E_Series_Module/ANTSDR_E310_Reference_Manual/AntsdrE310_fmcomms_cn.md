@@ -2,6 +2,8 @@
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_fmcomms.html)
 
+您可以在GitHub上找到此项目的地址, [Antsdr fmcomms](https://github.com/MicroPhase/antsdr_fmcomms) ,不同版本有不同的区别。
+
 ### ●1. 概述
 
 ANTSDR FMCOMMS2/3/4 固件可支持 2t2r 61.44Msps 采样率
@@ -29,7 +31,7 @@ ANTSDR FMCOMMS2/3/4 固件可支持 2t2r 61.44Msps 采样率
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/windows_win32diskimage.png)
 
-等待烧录完成后，用户还需要将data中的boot_file里的文件复制到SD卡的BOOT分区中。
+等待烧录完成后，用户还需要将网盘资料中的 boot_file文件中的启动文件 复制到SD卡的BOOT分区中。
 
 ### ●linux
 
@@ -75,7 +77,7 @@ gateway 192.168.1.1
 
 您可以参考此链接来安装 [Libiio](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio#:~:text=Libiio%20is%20a%20library%20that%20has%20been%20developed,of%20software%20interfacing%20Linux%20Industrial%20I%2FO%20%28IIO%29%20devices.)
 
-or
+或者
 
 您可以在以下位置找到安装 libiio 的详细步骤 [AntsdrE310 gnurdio](./AntsdrE310_gnurdio_cn.md)
 

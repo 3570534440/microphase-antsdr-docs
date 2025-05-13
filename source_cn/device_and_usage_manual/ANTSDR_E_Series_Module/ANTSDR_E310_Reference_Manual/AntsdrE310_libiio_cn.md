@@ -22,7 +22,7 @@ Libiio 是由 Analog Devices 开发的一个库，用于简化与 Linux 工业 I
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/fmcomms_iio_info.png)
 
-### ●3. Source code
+### ●3. 源代码
 
 Microphase 已为用户提供源代码。这里我们需要编译并运行 ad9361-iiostream.c 文件。首先，创建一个新文件夹 (libiio_example)，并在该文件夹下创建名为 arm 和 host 的文件夹。将 ad9361-iiostream.c 文件复制到上述文件夹中。
 

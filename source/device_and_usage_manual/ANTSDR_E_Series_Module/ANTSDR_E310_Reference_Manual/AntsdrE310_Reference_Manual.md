@@ -5,7 +5,7 @@
 
 ### Overview
 
-E310 is designed for customers who love SDR at the same time, and supports 70 MHz to 6 GHz signal transmission, which can be used for commercial use without any USB connection. When used externally, it is also possible to proceed with the actual operation of the machine. More than 100 original items support Japanese learning courses, and more customers can contact you for further development.
+The E310 is a software-defined radio (SDR) designed for makers and SDR enthusiasts while also meeting professional application requirements. It supports wideband RF signal transmission and reception across 70 MHz to 6 GHz, functioning either as a USB peripheral or operating offline through programming. Backed by extensive open-source projects and learning resources, it empowers users to explore diverse applications.
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310.jpg)
 
@@ -15,15 +15,15 @@ E310 is designed for customers who love SDR at the same time, and supports 70 MH
 
 - Analog Devices AD9361/9363 
 
-- 1 trillion internet connections
+- 1 Gigabit Ethernet interface
 
-- 1个TYPE-C USB 2.0 connector
+- TYPE-C USB 2.0 connector 
 
-- 1个TYPE-C USB-JTAG&UART connection
+- TYPE-C USB-JTAG&UART connection
 
-- 1个30-Pin 2.54mm GPIO expansion port
+- 30-Pin 2.54mm GPIO expansion port
 
-- 1个20-Pin 2.54mm GPIO expansion port
+- 20-Pin 2.54mm GPIO expansion port
 
 - 1 external PPS/10MHz reference entrance
 

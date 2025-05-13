@@ -1,58 +1,115 @@
 ## E200 UHD
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_UHD.html)
 
-### ●1. 概述
+您可以在GitHub上找到此项目的地址：[Antsdr UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md) ,不同版本有不同的区别。
 
-E310 是一款面向创客和SDR爱好者同时也可以满足专业应用场景的软件无线电,支持70 MHz 到 6 GHz 的宽频段射频信号收发，既可以作为 USB 外设使用，也可以通过编程实现脱机运行。众多的开源项目支持和学习教程，让客户接触更多应用成为可能。
+### 在 Ubuntu 上构建
+#### 构建依赖项
+您可以通过包管理器安装所有依赖项：
 
-![e310](./ANTSDR_E310_Reference_Manual.assets/e310.jpg)
+```
+sudo apt-get install autoconf automake build-essential ccache cmake cpufrequtils doxygen ethtool \
+g++ git inetutils-tools libboost-all-dev libncurses5 libncurses5-dev libusb-1.0-0 libusb-1.0-0-dev \
+libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy python3-setuptools \
+python3-ruamel.yaml
+```
 
-  #### ○资源特性：
+#### 构建说明
+- **使用 CMake 生成 Makefile**
+```
+cd host/
+mkdir build
+cd build
+cmake -DENABLE_X400=OFF -DENABLE_N320=OFF -DENABLE_X300=OFF -DENABLE_USRP2=OFF -DENABLE_USRP1=OFF -DENABLE_N300=OFF -DENABLE_E320=OFF -DENABLE_E300=OFF ../
+```
+- **Make**
+```
+make
+```
+- **安装**
+```
+sudo make install
+sudo ldconfig
+```
+默认安装路径：/usr/local/lib/uhd
 
-- Xilinx Zynq 7020（集成双核 ARM Cortex A9 和 Artix-7 FPGA）
+### 测试连接E200
+连接网口并给e200上电后，设备的网口直接连接到主机的千兆以太网，运行命令uhd_usrp_probe，运行示例如下：
 
-- Analog Devices AD9361/9363 
+```
+jcc@jcc:~$ uhd_usrp_probe 
+[INFO] [UHD] linux; GNU C++ version 8.4.0; Boost_106501; UHD_3.15.0.dev-0-8b82588b
+[INFO] [ANTSDR] Search Microphase ANTSDR E200.
+[INFO] [E200] Detected Device: ANTSDR
+[INFO] [E200] Initialize CODEC control...
+[INFO] [E200] _Product B205MINI(COMPATIBLE)...
+[INFO] [E200] Initialize Radio control...
+[INFO] [E200] Performing register loopback test... 
+[INFO] [E200] Register loopback test passed
+[INFO] [E200] Setting master clock rate selection to 'automatic'.
+[INFO] [E200] Asking for clock rate 16.000000 MHz... 
+[INFO] [E200] Actually got clock rate 16.000000 MHz.
+  _____________________________________________________
+ /
+|       Device: ANT-E-Series Device
+|     _____________________________________________________
+|    /
+|   |       Mboard: ANTSDR-EXXX
+|   |   No mboard EEPROM found.
+|   |   FPGA Version: 7.0
+|   |   
+|   |   Time sources:  none, internal, external
+|   |   Clock sources: internal, external
+|   |   Sensors: ref_locked
+|   |     _____________________________________________________
+|   |    /
+|   |   |       RX DSP: 0
+|   |   |   
+|   |   |   Freq range: -8.000 to 8.000 MHz
+|   |     _____________________________________________________
+|   |    /
+|   |   |       RX Dboard: A
+|   |   |     _____________________________________________________
+|   |   |    /
+|   |   |   |       RX Frontend: A
+|   |   |   |   Name: FE-RX1
+|   |   |   |   Antennas: TX/RX, RX2
+|   |   |   |   Sensors: temp, rssi, lo_locked
+|   |   |   |   Freq range: 50.000 to 6000.000 MHz
+|   |   |   |   Gain range PGA: 0.0 to 76.0 step 1.0 dB
+|   |   |   |   Bandwidth range: 200000.0 to 56000000.0 step 0.0 Hz
+|   |   |   |   Connection Type: IQ
+|   |   |   |   Uses LO offset: No
+|   |   |     _____________________________________________________
+|   |   |    /
+|   |   |   |       RX Codec: A
+|   |   |   |   Name: ANTSDR-EXXX RX dual ADC
+|   |   |   |   Gain Elements: None
+|   |     _____________________________________________________
+|   |    /
+|   |   |       TX DSP: 0
+|   |   |   
+|   |   |   Freq range: -8.000 to 8.000 MHz
+|   |     _____________________________________________________
+|   |    /
+|   |   |       TX Dboard: A
+|   |   |     _____________________________________________________
+|   |   |    /
+|   |   |   |       TX Frontend: A
+|   |   |   |   Name: FE-TX1
+|   |   |   |   Antennas: TX/RX
+|   |   |   |   Sensors: temp, lo_locked
+|   |   |   |   Freq range: 50.000 to 6000.000 MHz
+|   |   |   |   Gain range PGA: 0.0 to 89.8 step 0.2 dB
+|   |   |   |   Bandwidth range: 200000.0 to 56000000.0 step 0.0 Hz
+|   |   |   |   Connection Type: IQ
+|   |   |   |   Uses LO offset: No
+|   |   |     _____________________________________________________
+|   |   |    /
+|   |   |   |       TX Codec: A
+|   |   |   |   Name: ANTSDR-EXXX TX dual DAC
+|   |   |   |   Gain Elements: None
+```
+当您看到上述输出时，uhd 就可以在 e200 上运行了。
 
-- 1 个千兆以太网接口
 
-- 1个TYPE-C USB2.0接口
-
-- 1个TYPE-C USB-JTAG&UART接口
-
-- 1个30-Pin 2.54mm间距GPIO拓展口
-
-- 1个20-Pin 2.54mm间距GPIO拓展口
-
-- 1个外部 PPS/10MHz 参考输入接口
-
-- 2 个发射通道和 2 个接收通道，支持半双工或全双工
-
-- 灵活采样率的 12 位 ADC 和 DAC
-
-- 集成射频前端（AD9361：70 MHz - 6 GHz，AD9363：325 MHz - 3.8 GHz）
-
-- 可变模拟带宽（AD9361：200 kHz - 56 MHz，AD9363：200 kHz - 20 MHz）
-
-#### ○软件特性：
-
-- ARM 核心可运行完整的 Linux 系统
-- 主机与 E310 之间可通过 libiio接口进行通信
-
-### ●2. 开箱检测
-
-#### ○2.1 物品清单
-
-#### ○2.2 ANTSDR 驱动软件安装
-
-#### ○2.3 连接到电脑
-
-#### ○2.4 ANTSDR 网口测试
-
-#### ○2.5 网络数据传输
-
-### ●3. 
-#### ○3.1 
-
-#### ○3.2 
-
-#### ○3.3 

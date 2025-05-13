@@ -23,7 +23,7 @@ sudo dd bs=512 count=31116288 if=openwifi-xyz.img of=/dev/your_sdcard_dev
 (To have correct count value, better to check the .img file actual situation by "fdisk -l img_filename")
 ```
 After the SD card is burned,
-Insert the SD card into the computer and copy the startup file to the BOOT partition of the SD card.
+Insert the SD card into the computer and copy the startup file to the BOOT partition of the SD card. The location of the startup file is in the openwifi directory under the BOOT partition. This directory stores the startup files of different devices. The startup file of the ANTSDR E310 device is in the antsdr directory
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310_openwifi_boot_file.png)
 

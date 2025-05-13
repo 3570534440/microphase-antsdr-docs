@@ -2,7 +2,7 @@
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_matlab.html)
 
-### ●1. Overview
+### ●1. 概述
 
 使用 ANTSDR，用户能够很方便地接入到各种 SDR 软件当中，可以尝试各种有趣的无线电实验。比如在 GNU Radio 和 Matlab&Simulink 中，用户可以在软件上实现通信和信号处理相关的算法，然后通过 ANTSDR 来实现信号的发射和接收。又或者可以使用开源的软件，来进行诸如广播解调，电视信号解调，飞机追踪等有意思的功能。
 
@@ -12,7 +12,7 @@
 
 如果您第一次使用antsdr，需要先看 [开箱检测](./AntsdrE310_Unpacking_examination_cn.md)
 
-### ●2. Install the driver
+### ●2. 安装驱动
 
 如果你没有安装plutosdr驱动，可以
 [下载windows驱动](https://wiki.analog.com/university/tools/pluto/drivers/windows)
@@ -45,7 +45,7 @@ pluto固件可以从github下载.[点击下载](https://github.com/MicroPhase/an
 ANTSDR 系统启动时，以太网 IP 地址为 192.168.1.10。为了使主机能够正常访问 ANTSDR，需要将电脑的 IP 地址设置为与 ANTSDR 同一网段。您可以参考 [开箱检测](./AntsdrE310_Unpacking_examination_cn.md)的网络设置。 
 
 
-### ●4.Test Connection
+### ●4.测试连接
 
 设置好上位机IP地址后，就可以使用Matlab中的PlutoSDR示例程序测试当前ANTSDR的连接状态。
 
@@ -73,4 +73,64 @@ ip:192.168.1.10
 
 ![E310](./ANTSDR_E310_Reference_Manual.assets/matlab_demo_info.png)
 
+### 使用fmcomms镜像连接到matlab
 
+如果您还不熟悉在E310上使用fmcomms镜像，您可以先看[antsdr fmcomms](./AntsdrE310_fmcomms_cn.md) 章节。
+笔者这里安装的是matlab2021.a版本，推荐使用2021a版本。
+
+打开 matlab，在下面网站下载对应 matlab 版本的工具包 [下载工具包](https://github.com/analogdevicesinc/TransceiverToolbox/releases)。然后在matlab双击点击安装就可以了
+
+设置电脑 IP 为 192.168.1.100,此时电脑可以 ping 通设备
+在 matlab 中新建脚本，输入下面的代码测试连接
+```
+clc;
+clear all;
+close all;
+amplitude = 2^12; frequency = 0.12e6;
+swv1 = dsp.SineWave(amplitude, frequency);
+swv1.ComplexOutput = true;
+swv1.SamplesPerFrame = 1e4*10;
+swv1.SampleRate = 3e6;
+y = swv1();
+
+%% Tx set up
+tx = adi.ADRV9009.Tx('uri','ip:192.168.1.10');
+tx.CenterFrequency = 1e9;
+tx.DataSource = 'DMA';
+tx.EnableCyclicBuffers = true;
+tx.AttenuationChannel0 = -10;
+tx.EnabledChannels = [1,2];
+tx([y,y]);
+
+%% Rx set up
+rx = adi.ADRV9009.Rx('uri','ip:192.168.1.10');
+rx.CenterFrequency = tx.CenterFrequency;
+rx.EnabledChannels = [1,2];
+rx.kernelBuffersCount = 1;
+
+%% Run
+for k=1:10
+    valid = false;
+    while ~valid
+        [out, valid] = rx();
+    end
+end
+tx.release();
+rx.release();
+
+figure(1); 
+plot(0:numel(y)-1, real(y), 'r', 0:numel(y)-1, imag(y), 'b'); 
+xlim([0 250]); 
+xlabel('sample index'); 
+grid on;
+
+out=out';
+figure(2); 
+plot(real(out(1,1:1024)));
+hold on;
+plot(imag(out(1,1:1024)));
+figure(3) 
+plot(real(out(2,1:1024)));
+hold on;
+plot(imag(out(2,1:1024)))
+```

@@ -111,7 +111,7 @@ export PYTHONPATH=$PYTHONPATH:/usr/lib/python{PYTHON VERSION}/{site or dist}-pac
 gnuradio-companion
 ```
 
-### ●4. Using the Pluto blocks
+### ●4. 在gnuradio中使用Pluto
 
 进行前需要先使用 Pluto 固件，PLTUO 固件使用方法可在此处查看 [Unpacking examination](./AntsdrE310_Unpacking_examination_cn.md)
 
@@ -175,7 +175,7 @@ gnuradio-companion
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/plutosdr_sink.png)
 
-### ●4. Using the fmcomms blocks
+### ●4. 在gnuradio中使用fmcomms
 
 使用前，您需要使用 fmcomms 固件。您可以在此处找到 fmcomms 固件的使用方法 [fmcomms](./AntsdrE310_fmcomms_cn.md)
 

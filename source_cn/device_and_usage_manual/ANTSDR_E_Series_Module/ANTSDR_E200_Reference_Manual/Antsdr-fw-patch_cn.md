@@ -2,6 +2,6 @@
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/Antsdr-fw-patch.html)
 
-此项目可以参考E310，它们是一样的：
+有关ANTSDR E200 pluto固件编译方法，可以参考 E310 ：
 
-[Antsdr fw patch](../ANTSDR_E310_Reference_Manual/Antsdr-fw-patch_cn.md)
+[Antsdr fw patch](../ANTSDR_E310_Reference_Manual/Antsdr-fw-patch_cn.md)，其方法与 E310 类似，同样适用与本项目。

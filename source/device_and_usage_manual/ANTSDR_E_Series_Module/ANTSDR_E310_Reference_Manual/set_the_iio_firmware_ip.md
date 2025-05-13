@@ -5,7 +5,7 @@
 
 If you want to use multiple ANTSDR-E310 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
 ## QSPI Flash boot mode
-### ●Set mac address
+### Set mac address
 1. 
     You can enter the linux system of E310 through ssh or serial port tool. The default ip is **192.168.1.10** and the baud rate of the serial port is **115200**. when using the network port, please make sure you can ping the board. 
 
@@ -61,7 +61,7 @@ If you want to use multiple ANTSDR-E310 devices when using **plutosdr** compatib
     ```
     The mac address of the network card eth0 has been successfully modified.
 
-### ●Set ip 
+### Set ip 
 The default ip is 192.168.1.10, if you need to modify the ip, you also need to enter the system.
 
 1. 
@@ -80,12 +80,12 @@ The default ip is 192.168.1.10, if you need to modify the ip, you also need to e
 
 
 ## SD card boot mode
-### ●Set mac address
+### Set mac address
 1. 
     If it is in the sd card boot mode, then you need to modify the sd card uEnv.txt file. Find ```ethaddr=00:0a:35:00:01:22``` and change it ```ethaddr=xx:xx:xx:xx:xx:xx```
 
     Then start the device.
 
 
-### ●Set ip
+### Set ip
 The method of changing ip by starting sd card is the same as starting and changing ip by qspi.

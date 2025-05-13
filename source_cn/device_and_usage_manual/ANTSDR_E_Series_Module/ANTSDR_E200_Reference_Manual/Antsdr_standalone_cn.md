@@ -6,5 +6,6 @@
 
 [项目地址](https://github.com/MicroPhase/antsdr_standalone)
 
-此项目可以参考E310，它们是一样的：
-[Antsdr standalone (裸机)](../ANTSDR_E310_Reference_Manual/Antsdr_standalone_cn.md)
+有关ANTSDR E200 裸机的使用方法，可以参考 E310 ：
+
+[Antsdr standalone (裸机)](../ANTSDR_E310_Reference_Manual/Antsdr_standalone_cn.md)，其方法与 E310 类似，同样适用与本项目。

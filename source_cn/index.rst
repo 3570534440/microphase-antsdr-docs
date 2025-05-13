@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ANTSDR 用户手册
+ANTSDR 使用指南
 =========================================
 
-.. raw:: html
+.. raw:: html+
 
     <a href="../index.html">[English]</a>
 

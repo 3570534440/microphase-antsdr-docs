@@ -5,15 +5,15 @@
 
 ### ●1. Overview
 
-E310 is a software radio for makers and SDR enthusiasts, and can also meet professional application scenarios. It supports wide-band RF signal transmission and reception from 70 MHz to 6 GHz. It can be used as a USB peripheral or can be programmed to run offline. Numerous open source project support and learning tutorials make it possible for customers to access more applications.
+The E310 is a software-defined radio (SDR) designed for makers and SDR enthusiasts while also meeting professional application requirements. It supports wideband RF signal transmission and reception across 70 MHz to 6 GHz, functioning either as a USB peripheral or operating offline through programming. Backed by extensive open-source projects and learning resources, it empowers users to explore diverse applications.
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310.jpg)
 
-### ●2. Item List
+### ●2. Package Contents
 
-Thank you for purchasing the ANTSDR series software radio platform from Microphase Technology Co., Ltd. When you get the ANTSDR E310 (standard version), open the accessory package, which should contain the following:
+Thank you for purchasing the ANTSDR series SDR platform from MicroPhase Technology . Upon receiving your ANTSDR E200 (Standard Edition), open the accessory kit, which should include the following items:
 
-- ANTSDR software radio: X1
+- ANTSDR SDR Device: X1
 
 - USB data cable: X2 
 
@@ -27,11 +27,11 @@ Thank you for purchasing the ANTSDR series software radio platform from Micropha
 
 - 32GB SD card: X1
 
-After opening the package, start unpacking inspection
+After unpacking, please check all items.
 
 ### ●3. Antsdr device software installation 
 
-Next, use the **pluto firmware** to listen to the radio 
+Next, use the **Pluto firmware** to receive radio broadcasts.
 
 The factory default firmware of ANTSDR E310 is pluto firmware, no need to change.
 
@@ -62,7 +62,7 @@ If not, please check whether your firmware is correct, whether your driver is in
 ![e310](./ANTSDR_E310_Reference_Manual.assets/ping192168110.png)
 
 
-○5. Listen to the radio
+○5. Receive Broadcasts
 
 Run SDRSharp.exe file in Windows to listen to the radio
 ![e310](./ANTSDR_E310_Reference_Manual.assets/sdrsharp.png)

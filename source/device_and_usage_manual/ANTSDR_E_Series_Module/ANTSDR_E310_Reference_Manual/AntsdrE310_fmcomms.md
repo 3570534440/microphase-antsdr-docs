@@ -2,6 +2,8 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_fmcomms_cn.html)
 
+You can find the address of this project on GitHub: [Antsdr fmcomms](https://github.com/MicroPhase/antsdr_fmcomms). Different versions have different differences.
+
 ### ●1. Overview
 
 ANTSDR FMCOMMS2/3/4 image can support 2t2r 61.44Msps sampling rate
@@ -17,6 +19,7 @@ First download the fmcomms firmware
 ### ●3. fmcomms firmware 
 ### ●windows
 
+It is recommended that users burn the SD card image under Linux. Due to the difference between Windows and Linux file systems, burning the image under Windows may fail.
 After the user decompresses it, he can use the image burning tool to burn it to the SD card.
 
 First, you need to prepare a 32GB SD card and format it to FAT32. The capacity of the SD card selected by the user should be larger than the size of the firmware.
@@ -26,8 +29,7 @@ First, you need to prepare a 32GB SD card and format it to FAT32. The capacity o
 Among the provided materials, there is a tool for burning images, win32diskimager. Users can install the tool and then use it to burn images. Burning images on the Windows platform is very simple. Users only need to use the burning tool, select the .img image to be burned, and then select the SD card device to be burned, and then click Write to burn the image.
 ![e310](./ANTSDR_E310_Reference_Manual.assets/windows_win32diskimage.png)
 
-After waiting for the burning to be completed, the user also needs to copy the files in the boot_file in the data to the BOOT partition of the SD card.
-
+After waiting for the burning to be completed, the user also needs to copy the startup file in the boot_file file in the network disk data provided by microphase to the BOOT partition of the SD card.
 
 ### ●linux
 Burning images in Ubuntu
@@ -35,7 +37,7 @@ Burning images in Ubuntu
 ```
 sudo dd if=2021-02-23-ADI-Kuiper.img of=/dev/sdb bs=1M
 ```
-Among them, 2021-02-23-ADI-Kuiper.img is the location of the openwifi image after you unzip it, and sdb is the location where the SD card is mounted in the ubuntu system. Users can determine these two variables according to their actual environment. Then use the command in the above format to burn the image. After burning, you also need to copy the files in the boot_file folder to the BOOT partition of the SD card.
+Among them, 2021-02-23-ADI-Kuiper.img is the location of the openwifi image after you unzip it, and sdb is the location where the SD card is mounted in the ubuntu system. Users can determine these two variables according to their actual environment. Then use the command in the above format to burn the image. After waiting for the burning to be completed, the user also needs to copy the startup file in the boot_file file in the network disk data provided by microphase to the BOOT partition of the SD card.
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/fmcomms_bootfile.png)
 
