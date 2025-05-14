@@ -7,6 +7,40 @@
 ![e310](./ANTSDR_E310_Reference_Manual.assets/e310_rf_power.png)
 
 The AD9361 is a high performance, highly integrated radio frequency (RF) Agile Transceiver™ designed for use in 3G and 4G base station applications. Its programmability and wideband capability make it ideal for a broad range of transceiver applications. The device combines a RF front end with a flexible mixed-signal baseband section and integrated frequency synthesizers, simplifying design-in by providing a configurable digital interface to a processor. The AD9361 receiver LO operates from 70 MHz to 6.0 GHz and the transmitter LO operates from 47 MHz to 6.0 GHz range, covering most licensed and unlicensed bands. Channel bandwidths from less than 200 kHz to 56 MHz are supported.
+
+### TX1 1.8G single signal test
+![e310](./ANTSDR_E310_Reference_Manual.assets/tx1_1.8g_e310.png)
+
+### Receiver Input Isolation Test at 1.8 GHz
+
+Manual gain control is used, with the gain set to 0 dB
+
+RX1:
+![e310](./ANTSDR_E310_Reference_Manual.assets/RX1-16.54-1.png)
+
+RX2
+![e310](./ANTSDR_E310_Reference_Manual.assets/RX2-67.9-1.png)
+
+The isolation between RX1 and RX2 is about 51.36db
+
+### Transmitter-to-Receiver Isolation Test at 1.8 GHz
+
+Both attenuation and gain are set to 0 dB.tx output power is 0dbm
+
+RX1：
+![e310](./ANTSDR_E310_Reference_Manual.assets/TX1_0dbm_rx1-79.54dbm.png)
+
+RX2：
+![e310](./ANTSDR_E310_Reference_Manual.assets/tx1_0dbm_rx2_-74.76dbm.png)
+
+### Transmitter-to-Transmitter Isolation Test at 1.8 GHz
+
+TX attenuation is set to 0 dB
+
+![e310](./ANTSDR_E310_Reference_Manual.assets/TX1-1.png)
+
+![e310](./ANTSDR_E310_Reference_Manual.assets/TX2-1.png)
+
 ### AD9361 Data Sheet
 
 You can find the ad9361 Data Sheet here:
