@@ -4,4 +4,4 @@
 
 About the usage of ANTSDR E200 gnuradio，You can refer to E310：
 
-[Antsdr gnuradio](../ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio_cn.md)，The method is similar to E310 and is also applicable to this project.
+[Antsdr gnuradio](../ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.md)，The method is similar to E310 and is also applicable to this project.

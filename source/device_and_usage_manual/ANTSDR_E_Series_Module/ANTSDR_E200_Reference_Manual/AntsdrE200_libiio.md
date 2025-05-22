@@ -4,4 +4,4 @@
 
 About the usage of ANTSDR E200 libiio ，You can refer to E310:
 
-[Antsdr libiio](../ANTSDR_E310_Reference_Manual/AntsdrE310_libiio_cn.md)，The method is similar to E310 and is also applicable to this project.
+[Antsdr libiio](../ANTSDR_E310_Reference_Manual/AntsdrE310_libiio.md)，The method is similar to E310 and is also applicable to this project.

@@ -4,4 +4,4 @@
 
 For the usage of ANTSDR E200 openwifi, you can refer to the E310 project, they are the same: It should be noted that the startup file of E200 and the startup file of E310 are different
 
-[Antsdr openwifi](../ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi_cn.md)
+[Antsdr openwifi](../ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi.md)

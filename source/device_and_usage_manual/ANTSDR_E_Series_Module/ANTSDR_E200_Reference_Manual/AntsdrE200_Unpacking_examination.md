@@ -79,7 +79,7 @@ Once connected, select a broadcast channel to start receiving.
 
 ○2. You can follow the instructions on this page to install[libiio](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio#:~:text=Libiio%20is%20a%20library%20that%20has%20been%20developed,of%20software%20interfacing%20Linux%20Industrial%20I%2FO%20%28IIO%29%20devices.)
 
-Alternatively, refer to this page for a detailed setup guide: [AntsdrE200 Gnurdio](./AntsdrE200_gnurdio_cn.md)
+Alternatively, refer to this page for a detailed setup guide: [AntsdrE200 Gnurdio](./AntsdrE200_gnurdio.md)
 
 
 ○3. Once libiio is installed, run iio_info -s to verify the connection.
