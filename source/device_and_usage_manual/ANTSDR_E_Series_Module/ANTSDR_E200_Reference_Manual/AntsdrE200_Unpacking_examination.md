@@ -1,8 +1,8 @@
-## E200 Unpacking examination
+## E200 Unpacking Examination
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_Unpacking_examination_cn.html)
 
-### ●1. 概述
+### ●1. Overview
 
 The E200 is a software-defined radio (SDR) platform designed for makers and SDR enthusiasts, while also suitable for professional application scenarios. It supports wideband RF signal transmission and reception from 70 MHz to 6 GHz. The device can be controlled via Gigabit Ethernet or operate independently through programming. With abundant open-source project support and learning resources, users can explore a wide range of applications.
 

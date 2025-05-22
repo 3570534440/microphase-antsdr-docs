@@ -1,8 +1,8 @@
-## E200 RF parameters
+## E200 RF Parameters
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_RF_parameters_cn.html)
 
 
-### E200 Tx power
+### E200 Tx Power
 TX1 RF power
 
 ![e200](./ANTSDR_E200_Reference_Manual.assets/e200_tx1_power.png)
