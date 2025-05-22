@@ -2,7 +2,7 @@
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr_standalone.html)
 
-### antsdr-no-OS
+### ANTSDR_no-OS
 [项目地址](https://github.com/MicroPhase/antsdr_standalone)
 
 基于 ADI hdl 和 no_OS 的 ANTSDR 裸机程序。

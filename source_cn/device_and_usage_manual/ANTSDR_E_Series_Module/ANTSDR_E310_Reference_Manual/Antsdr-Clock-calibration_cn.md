@@ -7,11 +7,11 @@
 
 使用前需准备一个10M时钟
 
-![e310](./ANTSDR_E310_Reference_Manual.assets/microphase-10M.png)
+![e310](./ANTSDR_E310_Reference_Manual.assets/clock-10M.png)
 
 准备 SMA 转 MMCX 连接线
 
-![e310](./ANTSDR_E310_Reference_Manual.assets/e310-10m-pps.png)
+![e310](./ANTSDR_E310_Reference_Manual.assets/3.jpg)
 
 在操作之前
 

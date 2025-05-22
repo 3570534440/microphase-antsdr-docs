@@ -1,15 +1,15 @@
-## Antsdr fw patch 
+## ANTSDR FW Patch 
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-fw-patch_cn.html)
 
 This Repository is used to make Microphase software radio device firmware. 
 
-You can find the address of this project on GitHub: [Antsdr-fw-patch](https://github.com/MicroPhase/antsdr-fw-patch). Different versions have different differences.
+You can find the address of this project on GitHub: [ANTSDR-FW-Patch](https://github.com/MicroPhase/antsdr-fw-patch). Different versions have different differences.
 ### Build Instructions
 
-The Firmware is built with the [Xilinx Vivado 2023.2](https://account.amd.com/en/forms/downloads/xef.html?filename=FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256.tar.gz)(v0.39). You need to install the correct Vivado version in you Linux PC, and then,you can follow the instructions below to generate the firmware for [ANTSDR E310](https://item.taobao.com/item.htm?spm=a230r.1.14.16.34e21142YIlxqx&id=647986963313&ns=1&abbucket=2#detail) or [ANTSDR E200](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17060615344.9.4f201b9f6YDKU2&id=691394502321) or [ANTSDR E310V2](https://item.taobao.com/item.htm?spm=a21xtw.29178619.product_shelf.8.3b923f77eJKa3u&id=708976727818&) and then. If you want to build other versions, check out the history repository.
+The Firmware is built with the [Xilinx Vivado 2023.2](https://account.amd.com/en/forms/downloads/xef.html?filename=FPGAs_AdaptiveSoCs_Unified_2023.2_1013_2256.tar.gz)(v0.39). You need to install the correct Vivado version in your Linux PC, and then, you can follow the instructions below to generate the firmware for [ANTSDR E310](https://item.taobao.com/item.htm?spm=a230r.1.14.16.34e21142YIlxqx&id=647986963313&ns=1&abbucket=2#detail) or [ANTSDR E200](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17060615344.9.4f201b9f6YDKU2&id=691394502321) or [ANTSDR E316(E310V2)](https://item.taobao.com/item.htm?spm=a21xtw.29178619.product_shelf.8.3b923f77eJKa3u&id=708976727818&) and then. If you want to build other versions, check out the history repository.
 
-### Install build requirements
+### Installing Build Requirements
 
 ```sh
 sudo apt-get install git build-essential fakeroot libncurses5-dev libssl-dev ccache 
@@ -21,9 +21,9 @@ sudo apt-get install libmpc-dev
 sudo apt-get remove libfdt-de
 ```
 
-### Get source code and setup bash
+### Getting Source Code and Setting Up Bash
 
-1. get source from git
+1. Get Source from Git
 	- v0.39
 		
 		```sh
@@ -31,11 +31,11 @@ sudo apt-get remove libfdt-de
 		```
 2. Toolchain
 
-   Due to incompatibility between the AMD/Xilinx GCC toolchain supplied with Vivado/Vitis and Buildroot. This project switched to Buildroot external Toolchain: Linaro GCC 7.3-2018.05 7.3.1
+   Due to incompatibility between the AMD/Xilinx GCC toolchain supplied with **Vivado/Vitis** and **Buildroot**. This project switched to **Buildroot** external Toolchain: **Linaro GCC 7.3-2018.05 7.3.1**
    [https://releases.linaro.org/components/toolchain/binaries/7.3-2018.05/arm-linux-gnueabihf/](https://releases.linaro.org/components/toolchain/binaries/7.3-2018.05/arm-linux-gnueabihf/)
 
 
-3. setup bash
+3. Setup Bash
 	- v0.39
         ```sh
         export CROSS_COMPILE=arm-linux-gnueabihf-
@@ -43,20 +43,21 @@ sudo apt-get remove libfdt-de
         export VIVADO_SETTINGS=/opt/Xilinx/Vivado/2023.2/settings64.sh
         ```
 
-### Export target
+### Export Target
 
-1. ant e310
+- ANTSDR E310
 
    ```sh
    export TARGET=ant
    ```
 
-2. ant e200
-	```sh
-	export TARGET=e200
-	```
-	
-3. ant e310v2
+- ANTSDR E200
+
+   ```sh
+   export TARGET=e200
+   ```
+
+- ANTSDR E316(E310V2)
 
    ```sh
    export TARGET=e310v2
@@ -72,19 +73,19 @@ After completing the above steps, start to Patch.
 cd antsdr-fw-patch
 ```
 
-1. ant e310
+- ant e310
 
    ```sh
    sh patch.sh ant
    ```
 
-2. ant e200
+- ant e200
 
    ```sh
    sh patch.sh e200
    ```
-   
-3. ant e310v2
+
+-  ant e310v2
 
    ```sh
    sh patch.sh e310v2
@@ -156,7 +157,7 @@ drwxrwxr-x 6 jcc 4.0K 12月 26 11:06 sdk
 
 
 
-### Make SD card boot image
+### Creating SD Card Boot Image
 
 After the firmware building finished, you can build the SD card boot image for device. Just type the following command.
 
@@ -164,11 +165,11 @@ After the firmware building finished, you can build the SD card boot image for d
 make sdimg
 ```
 
-You will see the SD boot image in the build_sdimg folder. You can just  copy all these files in that folder into a SD card, plug the SD card  into the ANTSDR, set the jumper into SD card boot mode.
+You will see the SD boot image in the `build_sdimg` folder. You can just  copy all these files in that folder into a SD card, plug the SD card  into the ANTSDR, set the jumper into SD card boot mode.
 
-### Update Flash by DFU
+### Updating Flash via DFU
 
-DFU mode is just for ant e310, e200 is unsupport. If your device is e310, You can update the flash by DFU. Set the jumper into Flash Boot mode.  When device is power up, push the DFU button, and then, you will see the both led in the device will turn green, now it's time to update the  flash. You should change into the build folder first,and plug a micro USB into  the OTG interface. After that, you should run the following command.
+DFU mode is only supported on the ANTSDR E310 device. It is **not supported** on the E200 version. If your device is E310, You can update the flash by DFU. Set the jumper into Flash Boot mode.  When device is power up, push the DFU button, and then, you will see the both led in the device will turn green, now it's time to update the  flash. You should change into the build folder first,and plug a micro USB into  the OTG interface. After that, you should run the following command.
 
 ```sh
 sudo dfu-util -a firmware.dfu -D ./ant.dfu
@@ -177,14 +178,14 @@ sudo dfu-util -a uboot-env.dfu -D ./uboot-env.dfu
 sudo dfu-util -a uboot-extra-env.dfu -U ./uboot-extra-env.dfu
 ```
 
-Now you can repower device.
+You can now power cycle the device.
 
 
 
-### Support 2r2t mode
-If you want to use 2r2t mode, you need to enter the system and run the following command to write the mode configuradion into the nor flash. **But there is a little difference in sd card boot mode and qspi boot mode**
+### Support for 2R2T Mode
+If you want to use 2R2T mode, you need to enter the system and run the following command to write the mode configuration into the NOR flash. **However, there is a slight difference between SD card boot mode and QSPI boot mode.**
 
-### QSPI mode
+### QSPI Mode
    ```sh
  fw_setenv attr_name compatible
  fw_setenv attr_val ad9361
@@ -193,9 +194,9 @@ If you want to use 2r2t mode, you need to enter the system and run the following
  reboot
    ```
 
-After restarting, use the command to detect whether the variable in the flash has been written. If the write is successful, then the 2r2t mode can be used.
+After restarting, use the command to check whether the variable has been successfully written to flash. If the write was successful, 2R2T mode can then be used.
 
-Of course, thers is another way to configure the 2r2t mode, and use the command to write to the flash under uboot, such as
+Alternatively, you can configure 2R2T mode directly via U-Boot by using the following commands:
 
 ```sh
  setenv attr_name compatible
@@ -206,8 +207,8 @@ Of course, thers is another way to configure the 2r2t mode, and use the command 
  reset
 ```
 
- ### SD mode
- You need to modify some parameters in uEnv.txt file.
+ ### SD Mode
+ You need to modify some parameters in `uEnv.txt` file.
 
 1. you need to modify the value of **adi_loadvals** as follows:
 

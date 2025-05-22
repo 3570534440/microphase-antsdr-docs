@@ -8,7 +8,7 @@
 
 The AD9361 is a high performance, highly integrated radio frequency (RF) Agile Transceiver™ designed for use in 3G and 4G base station applications. Its programmability and wideband capability make it ideal for a broad range of transceiver applications. The device combines a RF front end with a flexible mixed-signal baseband section and integrated frequency synthesizers, simplifying design-in by providing a configurable digital interface to a processor. The AD9361 receiver LO operates from 70 MHz to 6.0 GHz and the transmitter LO operates from 47 MHz to 6.0 GHz range, covering most licensed and unlicensed bands. Channel bandwidths from less than 200 kHz to 56 MHz are supported.
 
-### TX1 1.8G single signal test
+### TX1 Single Signal Transmission Test at 1.8 GHz
 ![e310](./ANTSDR_E310_Reference_Manual.assets/tx1_1.8g_e310.png)
 
 ### Receiver Input Isolation Test at 1.8 GHz

@@ -1,22 +1,23 @@
-## Antsdr Clock calibration
+## ANTSDR Clock Calibration
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-Clock-calibration_cn.html)
 
-Users need to enter the system to operate the iio device file, or access the iio device named ad5660mp through the libiio interface on the host computer. Here, the clock is calibrated by entering the system.
+To calibrate the clock, users need to access the system to operate the IIO device file or use the libiio interface on a host computer to access the IIO device named `ad5660mp`. This guide demonstrates calibration via system access.
 
-You need to prepare a 10M clock before use
+### Preparation
 
-![e310](./ANTSDR_E310_Reference_Manual.assets/microphase-10M.png)
+You need to prepare:
 
-Prepare SMA to MMCX cable
 
-![e310](./ANTSDR_E310_Reference_Manual.assets/e310-10m-pps.png)
+A 10M Clock  
+![clock](./ANTSDR_E310_Reference_Manual.assets/clock-10M.png)
 
-Before proceeding
+A SMA To MMCX Cable
+![SMA](./ANTSDR_E310_Reference_Manual.assets/3.jpg)
 
-Connect the SMA to MMCX cable to the 10/PPS port of antsdr
+Connect the SMA-to-MMCX cable to the **10/PPS** port on the AntSDR.
 
-### ad5660mp
+### Accessing `ad5660mp`
 
 First, log into the system through the serial port, with the device user name root and password analog.
 
@@ -78,8 +79,9 @@ The default state is manual setting, you can view the command through cat. The d
 23000
 
 ```
-### Automatic settings
+### Automatic Calibration
 10M automatic lock configuration, enter the following command to configure dac to automatic state 10M lock, this way When writing, execute one by one, press Ctrl+C after entering the return to exit, and you can use the cat command to check whether the setting is successful.
+
 ```
 echo 0 > in_voltage_dac_mode
 echo 0 > in_voltage_dac_ref_sel
@@ -100,7 +102,7 @@ Wait for tens of seconds.After locking, you can view it through cat in_voltage_d
 # cat in_voltage_dac_locked 
 1
 ```
-### Manual settings
+### Manual Calibration
 
 Manually set the mode and write the value.
 ```

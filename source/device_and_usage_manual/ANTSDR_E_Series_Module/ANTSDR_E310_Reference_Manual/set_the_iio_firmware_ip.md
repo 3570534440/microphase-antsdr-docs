@@ -3,33 +3,34 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/set_the_iio_firmware_ip_cn.html)
 
-If you want to use multiple ANTSDR-E310 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
-## QSPI Flash boot mode
-### Set mac address
+If you plan to use multiple ANTSDR-E310 devices with **PlutoSDR-compatible** firmware, you’ll need to configure unique MAC and IP addresses for each device. This guide will walk you through the process.
+## QSPI Flash Boot Mode
+### Setting MAC Address
 1. 
-    You can enter the linux system of E310 through ssh or serial port tool. The default ip is **192.168.1.10** and the baud rate of the serial port is **115200**. when using the network port, please make sure you can ping the board. 
+    Access the E310 Linux system via SSH or a serial port tool. The default IP address is `192.168.1.10`, and the serial port baud rate is `115200`. If connecting over Ethernet, make sure you can ping the device.
 
-    The **default username and password**:
-    
-    username:root 
-    
-    password:**analog**
+    **Default login credentials**:
 
-2. 
-    After enter the linux system, Set the mac address **using the command fw_setenv**, for example.
+    - Username: `root`
+
+    - Password: `analog`
+
+2. After logging in, set the MAC address using the `fw_setenv` command. 
+
+    For example:
 
     ```sh
     fw_setenv ethaddr 00:0a:35:00:08:30
     ```
 
 3. 
-    Then enter the command reboot to restart the device or re-power.
+    Reboot the device by running the following command or by power cycling the device:
     ```sh
     reboot
     ```
 
 4. 
-    If nothing else, Enter system and you can use the ifconfig command to check that the mac address has been successfully modified.
+    Once the system restarts, use the `ifconfig` command to verify that the MAC address was successfully updated:
 
     ```txt
     # ifconfig 
@@ -59,33 +60,51 @@ If you want to use multiple ANTSDR-E310 devices when using **plutosdr** compatib
             RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
     
     ```
-    The mac address of the network card eth0 has been successfully modified.
+    The MAC address for `eth0` should now reflect the updated value.
 
-### Set ip 
-The default ip is 192.168.1.10, if you need to modify the ip, you also need to enter the system.
+### Set IP 
+The default IP address is `192.168.1.10`. To change it, follow the steps below:
 
-1. 
-    If you just need to temporarily modify the ip address, you can use the **ifconfig** command like modifying the ip on the ubuntu system is enough.
+1. To **temporarily** change the IP address, use the `ifconfig` command, similar to how it's done on Ubuntu systems:
 
-    **However, this method will restore the default ip address(192.168.1.10) after restarting the device.**
+    ```
+    ifconfig eth0 192.168.2.1
+    ```
+
+    > [!WARNING]
+    >
+    > This change is **not persistent**. The IP address will revert to `192.168.1.10` after a reboot.
+
+    
 
 2. 
-    If you want to permanently modify the ip address, you must use the **fw_setenv** command such as this.
+    To **permanently** change the IP address, use the `fw_setenv` command:
     ```sh
     fw_setenv ipaddr_eth 192.168.2.1
     ```
 
 3. 
-    Then restart the device.
+    Restart the device for the changes to take effect.
 
 
-## SD card boot mode
-### Set mac address
-1. 
-    If it is in the sd card boot mode, then you need to modify the sd card uEnv.txt file. Find ```ethaddr=00:0a:35:00:01:22``` and change it ```ethaddr=xx:xx:xx:xx:xx:xx```
+## SD Card Boot Mode
+### Setting MAC Address
+1. If booting from an SD card, you’ll need to modify the `uEnv.txt` file on the SD card. 
+    
+    Locate the line:
+    
+    ```
+    ethaddr=00:0a:35:00:01:22
+    ```
+    
+    And replace it with your desired MAC address:
+    
+    ```
+    ethaddr=xx:xx:xx:xx:xx:xx
+    ```
+    
+    Then boot the device.
 
-    Then start the device.
 
-
-### Set ip
-The method of changing ip by starting sd card is the same as starting and changing ip by qspi.
+### Setting the IP Address
+The process for setting the IP address when using SD card boot mode is identical to that of the QSPI flash boot method.

@@ -3,21 +3,17 @@
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio_cn.html)
 
 
-### ●1. Overview
-[Gnuradio](https://www.gnuradio.org/) is an open source software
+### 1. Overview
+**[GNU Radio](https://www.gnuradio.org/)** is a free and open-source software development toolkit that provides signal processing blocks for implementing software-defined radios and signal processing systems. It can be used with external RF hardware to create software-defined radio systems or without hardware in a simulation-like environment. GNU Radio is widely used in amateur, academic, and commercial settings to support wireless communications research and the development of real-world radio systems.
 
-[Gnuradio](https://www.gnuradio.org/) is a free software development kit that provides signal processing blocks for implementing software
-defined radios and signal processing systems. It can be used with external RF hardware to create software-defined radios, or without hardware in a simulation-like environment. It is widely used in amateur, academic, and commercial environments to support wireless communications research and real-world radio systems.
-
-The GNURadio software provides a framework and tools for building and running software radios or just general signal processing applications. GNURadio applications themselves are often called "flowgraphs", which are a series of signal processing blocks connected together, describing the flow of data. These flowgraphs can be written in C++ or Python programming languages. The GNURadio infrastructure is written entirely in C++, while many user tools are written in Python.
+GNU Radio offers a comprehensive framework for developing and running software radios and signal processing applications. These applications, often called "flowgraphs", are composed of interconnected signal processing blocks, which are a series of signal processing blocks connected together, describing the flow of data. These flowgraphs can be written in C++ or Python programming languages. The GNU Radio infrastructure is written entirely in C++, while many user tools are written in Python.
 
 As with all software-defined radio systems, reconfigurability is a key feature. GNU Radio's open interfaces make it easy to integrate users' own radio equipment into the GNU Radio ecosystem without designing for specific hardware.
 
-### ●2. libiio installation on unutu
-Different Ubuntu versions are different. You can refer to the installation materials for details:
-[gnuradio install](https://wiki.analog.com/resources/tools-software/linux-software/gnuradio)
-#### ○1. install system packages
-Before installing the Pluto SDR driver, install the required dependencies and enter the following command
+### 2. Installing Libiio on Ubuntu
+Different Ubuntu versions are different. You can refer to the [installation materials](https://wiki.analog.com/resources/tools-software/linux-software/gnuradio) for details.
+#### ● Installing System Packages
+Before installing the Pluto SDR driver, make sure to install the required dependencies using the following commands:
 ```
 sudo apt install libxml2 libxml2-dev bison flex cmake git libaio-dev libboost-all-dev
 sudo apt install libusb-1.0-0-dev
@@ -26,7 +22,7 @@ sudo apt install bison flex cmake git libgmp-dev
 sudo apt install swig
 sudo apt install liborc-dev
 ```
-#### ○2. install libiio
+#### ●Install libiio
 You can find the latest version on [github](https://github.com/analogdevicesinc/libiio)
 
 ```
@@ -39,7 +35,7 @@ make
 sudo make install
 cd ../..
 ```
-#### ○3. install libad9361-iio
+#### ● Installing libad9361-iio
 
 ```
 git clone https://github.com/analogdevicesinc/libad9361-iio.git
@@ -52,10 +48,10 @@ sudo make install
 cd ../..
 
 ```
-### ●3. gnuradio and gr-iio
+### 3. GNU Radio and gr-iio
 
 
-#### install gnuradio
+#### ●Install GNU Radio
 
 
 ```
@@ -69,9 +65,9 @@ After the installation is complete, check the installed version
 gnuradio-companion -help
 ```
 
-#### install gr-iio
+#### ●Install gr-iio
 
-gr-iio in 3.8+ requires liborc-dev
+GNU Radio version 3.8 and above requires `liborc-dev` for gr-iio.
 
 ```
 (sudo) apt install liborc-dev
@@ -97,37 +93,35 @@ The added path is the location of the newly installed iio folder.
 For 3.8.2 no additional steps have to be taken
 
 
-#### gnuradio3.10
+#### ●GNU Radio 3.10
 
-If you are using gnuradio 3.10 or newer, gr-iio is already provided in the base installation of gnuradio itself,No need to install gr-iio.
+If you are using GNU Radio 3.10 or newer, gr-iio is already provided in the base installation of GNU Radio itself, No need to install gr-iio.
 
-After all installations are complete, we can open Gnuradio in the terminal
+After completing all installations, you can launch GNU Radio by entering the following command in the terminal:
 ```
 gnuradio-companion
 ```
 
-### ●4. Using the Pluto blocks
+### 4. Using the Pluto Blocks
 
-Before use, you need to use the pluto firmware. You can find the pltuo firmware usage here [Unpacking examination](./AntsdrE310_Unpacking_examination.md)
+Before using the Pluto blocks, ensure that the Pluto firmware is properly installed. You can find the Pluto firmware usage [here](./AntsdrE310_Unpacking_examination.md).
 
-You can find the antsdr gnuradio example here:
-
-[gnuradio demo](https://github.com/MicroPhase/gnu-radio-demo)
+You can find the ANTSDR GNU Radio example [here](https://github.com/MicroPhase/gnu-radio-demo).
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/gnuradio_test.png)
 
-#### ○General
+#### ●General
 **IIO Context URI**: IP:192.168.1.10
 
-**Buffer Size**: The size of the internal buffer in samples. The IIO module can only input/output one buffer containing samples at a time
+**Buffer Size**: The size of the internal buffer in samples. The IIO module can only input or output one buffer of samples at a time.
 
-#### ○PlutoSDR source
+#### ●PlutoSDR Source
 
-○**RF Bandwidth(MHz)**: Configures RX analog filters: RX TIA LPF and RX BB LPF.[Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rx_rf_bandwidth_control)
+○**RF Bandwidth(MHz)**: Configures RX analog filters: RX TIA LPF and RX BB LPF. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rx_rf_bandwidth_control)
 
-○**Sample Rate(MSPS)**: Frequency at which the hardware will input/output samples.[Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#settingquerying_the_rx_sample_rate)
+○**Sample Rate(MSPS)**: Frequency at which the hardware will input/output samples. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#settingquerying_the_rx_sample_rate)
 
-○**LO Frequency(MHz)**: Selects the RX local oscillator frequency. Range 70MHz to 6GHz with 1Hz tuning granularity.[Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#local_oscillator_control_lo)
+○**LO Frequency(MHz)**: Selects the RX local oscillator frequency. Range 70MHz to 6GHz with 1Hz tuning granularity. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#local_oscillator_control_lo)
 
 ○**Tracking**: [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#calibration_tracking_controls)
 
@@ -147,18 +141,18 @@ You can find the antsdr gnuradio example here:
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/PlutoSDR_source.png)
 
-#### ○PlutoSDR sink
+#### ●PlutoSDR Sink
 
 ○**RF Bandwidth(MHz)**: Configures TX analog filters: TX BB LPF and TX Secondary LPF. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#tx_rf_bandwidth_control)
 
-○**Sample Rate(MSPS)**: Frequency at which the hardware will input/output samples . [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#settingquerying_the_tx_sample_rate)
+○**Sample Rate(MSPS)**: Frequency at which the hardware will input/output samples. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#settingquerying_the_tx_sample_rate)
 
 ○**LO Frequency(MHz)**: Selects the TX local oscillator frequency. Range 70MHz to 6GHz with 1Hz tuning granularity. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#local_oscillator_control_lo)
 
 
-○**RF Port Select**: Selects the RF port to be used.[Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rf_port_selection)
+○**RF Port Select**: Selects the RF port to be used. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rf_port_selection)
 
-○**Attenuation (dB)**: Individually controlls attenuation for TX1 and TX2. The range is from 0 to -89.75 dB in 0.25dB steps.[Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#tx_attenuation_control)
+○**Attenuation (dB)**: Individually controls attenuation for TX1 and TX2. The range is from 0 to -89.75 dB in 0.25dB steps. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#tx_attenuation_control)
 
 ○**Cyclic**: Set to “true” if the “cyclic” mode is desired. In this case, the first buffer of samples will be repeated on the enabled channels of the FMCOMMS-2 until the program is stopped.
 The FMCOMMS-2 IIO block will report its processing as complete: the blocks connected to the PlutoSDR IIO block won't execute anymore, but the rest of the flow graph will.
@@ -170,9 +164,9 @@ The FMCOMMS-2 IIO block will report its processing as complete: the blocks conne
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/plutosdr_sink.png)
 
-### ●4. Using the fmcomms blocks
+### 5. Using the FMCOMMS Blocks
 
-Before use, you need to use the fmcomms firmware. You can find the usage of the fmcomms firmware here [fmcomms](./AntsdrE310_fmcomms.md)
+Before use, you need to use the FMCOMMS firmware. You can find the usage of the FMCOMMS firmware [here](./AntsdrE310_fmcomms.md).
 
 The FMCOMMS-2 IIO blocks can run over the IP network or USB. By setting the “IIO context URI” parameter to the IP address of the target board, you can stream samples from/to the remote board
 
@@ -182,7 +176,7 @@ The FMCOMMS-2 IIO blocks can run over the IP network or USB. By setting the “I
 
 **Buffer Size**: The size of the internal buffer in samples. The IIO module can only input/output one buffer containing samples at a time
 
-#### ○fmocmms source
+#### ●FMCOMMS Source
 ○**RF Bandwidth(MHz)**: Configures TX analog filters: TX BB LPF and TX Secondary LPF. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rx_rf_bandwidth_control)
 
 ○**Sample Rate(MSPS)**: Frequency at which the hardware will input/output samples . [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#settingquerying_the_rx_sample_rate)
@@ -206,7 +200,7 @@ The FMCOMMS-2 IIO blocks can run over the IP network or USB. By setting the “I
 ![e310](./ANTSDR_E310_Reference_Manual.assets/fmcomms_source.png)
 
 
-#### ○fmocmms sink
+#### ●FMCOMMS Sink
 
 ○**RF Bandwidth(MHz)**: Configures TX analog filters: TX BB LPF and TX Secondary LPF. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rx_rf_bandwidth_control)
 
@@ -216,7 +210,7 @@ The FMCOMMS-2 IIO blocks can run over the IP network or USB. By setting the “I
 
 ○**RF Port Select**: Selects the RF port to be used. Can be either any of the inputs on the Rx input mux (in single ended or differential) or the Tx monitor input. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rf_port_selection)
 
-**Attenuation(RX1, RX2)(dB)**: Individually controlls attenuation for TX1 and TX2. The range is from 0 to -89.75 dB in 0.25dB steps.[Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#tx_attenuation_control)
+**Attenuation(RX1, RX2)(dB)**: Individually controls attenuation for TX1 and TX2. The range is from 0 to -89.75 dB in 0.25dB steps. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#tx_attenuation_control)
 
 
 ○**Cyclic**: Set to “true” if the “cyclic” mode is desired. In this case, the first buffer of samples will be repeated on the enabled 
@@ -228,6 +222,6 @@ The FMCOMMS-2 IIO block will report its processing as complete: the blocks conne
 
 ○**Filter**: Allows a FIR filter configuration to be loaded from a file. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#digital_fir_filter_controls)
 
-○**Filter auto** When enabled loads a default filter and thereby enables lower sampling / baseband rates.
+○**Filter auto** When enabled, a default filter is loaded, enabling lower sampling and baseband rates.
 ![e310](./ANTSDR_E310_Reference_Manual.assets/fmcomms_source.png)
 
