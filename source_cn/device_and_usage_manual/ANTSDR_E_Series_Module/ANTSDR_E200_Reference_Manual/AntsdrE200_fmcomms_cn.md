@@ -1,4 +1,4 @@
-## E200 fmcomms 固件
+## E200 FMCOMMS 固件
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_fmcomms.html)
 

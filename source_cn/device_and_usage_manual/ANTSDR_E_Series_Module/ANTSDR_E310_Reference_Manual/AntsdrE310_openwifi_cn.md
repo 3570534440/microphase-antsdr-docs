@@ -1,4 +1,4 @@
-## E310 openwifi 
+## E310 OpenWiFi 
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi.html)
 
@@ -15,7 +15,7 @@ openwifi 是一个基于 ZYNQ7000+AD936x 的一个开源项目，该项目在 FP
 
 [点击下载](https://drive.google.com/file/d/12egFLT9TclmY8m3vCMHmUuSne3qK0SWc/view?pli=1)
 
-解压并刻录到 SD 卡（>=16GB）。之后，SD 卡应该有两个分区：BOOT 和 rootfs。要烧写 SD 卡，你可以使用dd命令将镜像烧录到sd卡
+解压并刻录到 SD 卡（>=16GB）。之后，SD 卡应该有两个分区：`BOOT` 和 `rootfs` 。要烧写 SD 卡，你可以使用 `dd` 命令将镜像烧录到SD卡
 
 ```
 sudo dd bs=512 count=31116288 if=openwifi-xyz.img of=/dev/your_sdcard_dev
@@ -41,7 +41,7 @@ cd openwifi
 ./wgd.sh
 ./fosdem.sh
 ```
-等到该命令运行结束之后，可以看到打印信息会出现一个 sdr0:AP-ENABLED,这说明 ANTSDR 作为 wifi 的 AP 功能已经就绪，这时候使用 ifconfig 命令可以看到当前的网络设备当中多出了以一个 sdr0。
+等到该命令运行结束之后，可以看到打印信息会出现一个 `sdr0:AP-ENABLED` ,这说明 ANTSDR 作为 wifi 的 AP 功能已经就绪，这时候使用 `ifconfig` 命令可以看到当前的网络设备当中多出了以一个 `sdr0` 。
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/20bbee3df177e2c2145119c01b767951.jpg)
 
@@ -58,7 +58,7 @@ sudo sysctl -w net.ipv4.ip_forward=1
 sudo iptables -t nat -A POSTROUTING -o NICY -j MASQUERADE
 sudo ip route add 192.168.13.0/24 via 192.168.10.122 dev ethX 
 ```
-其中 NICY 是用户的电脑另外一个可以联网的网络设备，比如 wlan0, ethX 是用户连接到 ANTSDR 的以太网设备端口。比如笔者根据自己的硬件平台，需要在我的ubuntu PC 终端中输入如下命令：
+其中 `NICY` 是用户的电脑另外一个可以联网的网络设备，比如 `wlan0`, `ethX` 是用户连接到 ANTSDR 的以太网设备端口。比如笔者根据自己的硬件平台，需要在我的ubuntu PC 终端中输入如下命令：
 
 示例
 

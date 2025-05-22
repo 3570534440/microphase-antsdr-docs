@@ -1,4 +1,4 @@
-## E310 matlab
+## E310 MATLAB
 
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_matlab_cn.html)

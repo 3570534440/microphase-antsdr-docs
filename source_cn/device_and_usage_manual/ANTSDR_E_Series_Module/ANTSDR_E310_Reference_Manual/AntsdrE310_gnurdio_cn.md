@@ -1,4 +1,4 @@
-## E310 gnuradio 
+## E310 GNU Radio 
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.html)
 
@@ -73,7 +73,7 @@ gnuradio-companion -help
 
 #### 安装 gr-iio
 
-如果您安装的是gnuradio3.8则需要安装gr-iio。3.8+ 版 gr-iio 需要 liborc-dev
+如果您安装的是gnuradio3.8则需要安装gr-iio。3.8+ 版 gr-iio 需要 `liborc-dev`
 
 ```
 (sudo) apt install liborc-dev

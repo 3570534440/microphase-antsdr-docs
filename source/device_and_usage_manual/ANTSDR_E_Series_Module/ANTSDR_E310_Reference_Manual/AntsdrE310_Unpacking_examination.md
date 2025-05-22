@@ -1,4 +1,4 @@
-## E310 Unpacking examination
+## E310 Unpacking Examination
 
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_Unpacking_examination_cn.html)

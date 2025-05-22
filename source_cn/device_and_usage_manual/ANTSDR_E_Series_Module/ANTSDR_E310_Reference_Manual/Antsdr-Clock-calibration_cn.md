@@ -1,4 +1,4 @@
-## Antsdr 时钟校准
+## ANTSDR 时钟校准
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-Clock-calibration.html)
 

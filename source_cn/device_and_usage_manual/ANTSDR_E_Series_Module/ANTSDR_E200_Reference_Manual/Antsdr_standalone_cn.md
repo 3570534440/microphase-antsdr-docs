@@ -1,8 +1,8 @@
-## Antsdr standalone (裸机) 
+## Antsdr Standalone (裸机) 
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/Antsdr_standalone.html)
 
-### antsdr-no-OS
+### ANTSDR_no-OS
 
 [项目地址](https://github.com/MicroPhase/antsdr_standalone)
 
