@@ -1,7 +1,7 @@
 ## E200 UHD
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_UHD.html)
 
-您可以在GitHub上找到此项目的地址：[Antsdr UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md) ,不同版本有不同的区别。
+您可以在GitHub上找到此项目的地址：[ANTSDR UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md) ,不同版本有不同的区别。
 
 ### 在 Ubuntu 上构建
 #### 构建依赖项

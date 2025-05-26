@@ -4,7 +4,7 @@
 
 该存储库用于制作 Microphase 软件无线电设备固件。
 
-你可以在GitHub上找到这个项目的地址: [Antsdr-fw-patch](https://github.com/MicroPhase/antsdr-fw-patch). 不同版本有不同的区别。
+你可以在GitHub上找到这个项目的地址: [ANTSDR-fw-patch](https://github.com/MicroPhase/antsdr-fw-patch). 不同版本有不同的区别。
 
 ### 构建说明
 

@@ -1,4 +1,4 @@
-## Antsdr Standalone (裸机) 
+## ANTSDR Standalone (裸机) 
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/Antsdr_standalone.html)
 
@@ -8,4 +8,4 @@
 
 有关ANTSDR E200 裸机的使用方法，可以参考 E310 ：
 
-[Antsdr standalone (裸机)](../ANTSDR_E310_Reference_Manual/Antsdr_standalone_cn.md)，其方法与 E310 类似，同样适用与本项目。
+[ANTSDR Standalone (裸机)](../ANTSDR_E310_Reference_Manual/Antsdr_standalone_cn.md)，其方法与 E310 类似，同样适用与本项目。

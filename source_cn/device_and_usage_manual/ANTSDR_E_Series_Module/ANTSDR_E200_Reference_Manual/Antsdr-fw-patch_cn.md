@@ -4,4 +4,4 @@
 
 有关ANTSDR E200 pluto固件编译方法，可以参考 E310 ：
 
-[Antsdr fw patch](../ANTSDR_E310_Reference_Manual/Antsdr-fw-patch_cn.md)，其方法与 E310 类似，同样适用与本项目。
+[ANTSDR FW Patch](../ANTSDR_E310_Reference_Manual/Antsdr-fw-patch_cn.md)，其方法与 E310 类似，同样适用与本项目。

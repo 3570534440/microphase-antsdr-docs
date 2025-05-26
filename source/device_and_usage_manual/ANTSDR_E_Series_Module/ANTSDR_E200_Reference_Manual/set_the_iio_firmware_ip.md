@@ -3,7 +3,7 @@
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/set_the_iio_firmware_ip.html)
 
 
-### pluto firmware
+### Pluto Firmware
 If you want to use multiple ANTSDR-E200 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
 ### QSPI Flash boot mode
 #### Set mac address

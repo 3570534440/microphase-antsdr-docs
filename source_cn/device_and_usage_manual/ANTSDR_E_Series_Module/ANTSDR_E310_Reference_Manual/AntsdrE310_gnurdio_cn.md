@@ -3,9 +3,9 @@
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.html)
 
 ### ●1. 概述
-[Gnuradio](https://www.gnuradio.org/) 是一个开源软件
+[GNU Radio](https://www.gnuradio.org/) 是一个开源软件
 
-[Gnuradio](https://www.gnuradio.org/) 是一个免费的软件开发工具包，提供信号处理模块用来实现软件定义的无线电和信号处理系统。它可以与外部 RF 硬件一起使用，以创建软件定义的无线电，或者在类似仿真的环境中无需硬件。它广泛用于业余爱好者，学术和商业环境，以支持无线通信研究和现实世界的无线电系统。
+[GNU Radio](https://www.gnuradio.org/) 是一个免费的软件开发工具包，提供信号处理模块用来实现软件定义的无线电和信号处理系统。它可以与外部 RF 硬件一起使用，以创建软件定义的无线电，或者在类似仿真的环境中无需硬件。它广泛用于业余爱好者，学术和商业环境，以支持无线通信研究和现实世界的无线电系统。
 
 GNURadio 软件提供了构建和运行软件无线电或仅用于通用信号处理应用程序的框架和工具。GNURadio 应用程序本身通常称为“流程图”，它是连接在一起的一系列信号处理块，从而描述了数据流。这些流程图可以用 C++或 Python 编程语言编写。GNURadio 基础结构完全用 C++编写，而许多用户工具都是用 Python 编写的。
 
@@ -13,7 +13,7 @@ GNURadio 软件提供了构建和运行软件无线电或仅用于通用信号�
 
 ### ●2.在ubuntu上安装libiio
 
-不同Ubuntu版本有所不同，具体可以参考安装资料：[gnuradio install](https://wiki.analog.com/resources/tools-software/linux-software/gnuradio)
+不同Ubuntu版本有所不同，具体可以参考安装资料：[GNU Radio install](https://wiki.analog.com/resources/tools-software/linux-software/gnuradio)
 
 #### ○1.安装系统包
 
@@ -30,7 +30,7 @@ sudo apt install liborc-dev
 
 #### ○2. 安装libiio
 
-您可以在 [github](https://github.com/analogdevicesinc/libiio) 上找到libiio的源码。
+您可以在 [GitHub](https://github.com/analogdevicesinc/libiio) 上找到libiio的源码。
 
 ```
 git clone -b v0.24 https://github.com/analogdevicesinc/libiio.git
@@ -101,7 +101,7 @@ export PYTHONPATH=$PYTHONPATH:/usr/lib/python{PYTHON VERSION}/{site or dist}-pac
 对于 3.8.2 版本，无需执行其他步骤。
 
 
-#### gnuradio3.10
+#### GNU Radio3.10
 
 如果您使用的是 Gnuradio 3.10 或更高版本，则 Gnuradio 本身的基础安装中已包含 gr-iio，无需再安装。
 
@@ -111,13 +111,13 @@ export PYTHONPATH=$PYTHONPATH:/usr/lib/python{PYTHON VERSION}/{site or dist}-pac
 gnuradio-companion
 ```
 
-### ●4. 在gnuradio中使用Pluto
+### ●4. 在 GNU Radio 中使用Pluto
 
-进行前需要先使用 Pluto 固件，PLTUO 固件使用方法可在此处查看 [Unpacking examination](./AntsdrE310_Unpacking_examination_cn.md)
+进行前需要先使用 Pluto 固件，PLTUO 固件使用方法可在此处查看 [Unpacking Examination](./AntsdrE310_Unpacking_examination_cn.md)
 
 您可以在这里找到 antsdr gnuradio 示例：
 
-[gnuradio demo](https://github.com/MicroPhase/gnu-radio-demo)
+[GNU Radio](https://github.com/MicroPhase/gnu-radio-demo)
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/gnuradio_test.png)
 
@@ -153,7 +153,7 @@ gnuradio-companion
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/PlutoSDR_source.png)
 
-#### ○PlutoSDR sink
+#### ○PlutoSDR Sink
 
 ○**RF Bandwidth(MHz)**: 配置 TX 模拟滤波器: TX BB LPF and TX Secondary LPF. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#tx_rf_bandwidth_control)
 
@@ -175,9 +175,9 @@ gnuradio-companion
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/plutosdr_sink.png)
 
-### ●4. 在gnuradio中使用fmcomms
+### ●4. 在 GNU Radio 中使用 FMCOMMS
 
-使用前，您需要使用 fmcomms 固件。您可以在此处找到 fmcomms 固件的使用方法 [fmcomms](./AntsdrE310_fmcomms_cn.md)
+使用前，您需要使用 FMCOMMS 固件。您可以在此处找到 FMCOMMS 固件的使用方法 [fmcomms](./AntsdrE310_fmcomms_cn.md)
 
 FMCOMMS-2 IIO 模块可以通过 IP 网络或 USB 运行。通过将“IIO context URI”参数设置为目标板的 IP 地址，您可以从远程传输样本。
 
@@ -187,7 +187,7 @@ FMCOMMS-2 IIO 模块可以通过 IP 网络或 USB 运行。通过将“IIO conte
 
 **Buffer Size**: 内部缓冲区的大小（以样本为单位）。IIO 模块每次只能输入/输出一个包含样本的缓冲区
 
-#### ○fmocmms source
+#### ○ FMCOMMS SOURCE
 ○**RF Bandwidth(MHz)**: 配置TX模拟滤波器: TX BB LPF and TX Secondary LPF. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rx_rf_bandwidth_control)
 
 ○**Sample Rate(MSPS)**: 硬件每秒钟输入或输出采样数据的频率 . [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#settingquerying_the_rx_sample_rate)
@@ -211,7 +211,7 @@ FMCOMMS-2 IIO 模块可以通过 IP 网络或 USB 运行。通过将“IIO conte
 ![e310](./ANTSDR_E310_Reference_Manual.assets/fmcomms_source.png)
 
 
-#### ○fmocmms sink
+#### ○FMCOMMS SINK
 
 ○**RF Bandwidth(MHz)**: 配置TX模拟滤波器: TX BB LPF and TX Secondary LPF. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#rx_rf_bandwidth_control)
 

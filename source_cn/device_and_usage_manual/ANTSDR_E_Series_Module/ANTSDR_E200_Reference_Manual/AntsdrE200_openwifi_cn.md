@@ -4,4 +4,4 @@
 
 有关ANTSDR E200 openwifi的使用方法，可以参考E310项目，它们是一样的：需要注意的是E200的启动文件和E310的启动文件是不同的
 
-[Antsdr OpenWiFi](../ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi_cn.md)
+[ANTSDR OpenWiFi](../ANTSDR_E310_Reference_Manual/AntsdrE310_openwifi_cn.md)
