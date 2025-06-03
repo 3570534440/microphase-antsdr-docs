@@ -2,24 +2,24 @@
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/Antsdr-Clock-calibration.html)
 
-⽤⼾需要进⼊系统对iio设备⽂件进⾏操作，或者在上位机通过libiio接口访
-问名字为ad5660mp的iio设备。这⾥通过进⼊系统来校准时钟。
+⽤⼾需要进⼊系统对iio设备⽂件进⾏操作，或者在上位机通过libiio接口访问名字为`ad5660mp`的iio设备。这⾥通过进⼊系统来校准时钟。
+### 准备
 
-使用前需准备一个10M时钟
+使用前需准备：
+
+一个10M时钟
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/clock-10M.png)
 
-准备 SMA 转 MMCX 连接线
+一根SMA 转 MMCX 连接线
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/3.jpg)
 
-在操作之前
-
-将 SMA 转 MMCX 线缆连接到 antsdr 的 10/PPS 端口
+将 SMA 转 MMCX 线缆的一端连接到 ANTSDR 的 **10/PPS** 端口，另一端连接到10M时钟上。
 
 ### ad5660mp
 
-⾸先通过串口进⼊系统，设备⽤⼾名root，密码analog。
+⾸先通过串口进⼊系统，设备⽤⼾名**root**，密码**analog**。
 
 ```
 ant login: root
@@ -40,7 +40,7 @@ https://github.com/MicroPhase/antsdr-fw-patch
 ```
 iio_attr -d
 ```
-可以看到有一个名为ad5660mp的iio设备，接下来进入这个目录。
+可以看到有一个名为`ad5660mp`的iio设备，接下来进入这个目录。
 ```
 
 # iio_attr -d
@@ -73,7 +73,7 @@ in_voltage_dac_read_value   Mode 1 User set DAC value Mode 0 External reference 
 in_voltage_dac_ref_sel      0:10M 1:PPS 2:GPS 
 in_voltage_dac_locked       PLL lock status
 ```
-默认状态为手动设置，可以通过cat命令查看。默认为手动模式，dac值为23000。
+默认状态为手动设置，DAC值为`23000`，可以通过`cat`命令查看。
 
 ```
 # cat in_voltage_dac_mode
@@ -84,8 +84,7 @@ in_voltage_dac_locked       PLL lock status
 ```
 ### 自动设置
 
-10M自动锁定配置，输入以下命令将dac配置为自动状态10M锁定，这种方式时，逐个执行，输入完后按Ctrl+C回车退出，可以使用cat命令检查是否设置成功。
-
+10M自动锁定配置，输入以下命令将DAC配置为自动状态10M锁定，使用这种方式时，需要逐个执行命令，输入完后按`Ctrl+C`回车退出，可以使用`cat`命令检查是否设置成功。
 ```
 echo 0 > in_voltage_dac_mode
 echo 0 > in_voltage_dac_ref_sel
@@ -106,7 +105,7 @@ echo 0 > in_voltage_dac_mode
 echo 2 > in_voltage_dac_ref_sel
 ```
 
-等待几十秒，锁定后可以通过cat in_voltage_dac_locked 查看。
+等待几十秒，锁定后可以通过`cat in_voltage_dac_locked` 查看。
 
 ```
 # cat in_voltage_dac_locked 

@@ -3,17 +3,16 @@
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.html)
 
 ### ●1. 概述
-[GNU Radio](https://www.gnuradio.org/) 是一个开源软件
 
-[GNU Radio](https://www.gnuradio.org/) 是一个免费的软件开发工具包，提供信号处理模块用来实现软件定义的无线电和信号处理系统。它可以与外部 RF 硬件一起使用，以创建软件定义的无线电，或者在类似仿真的环境中无需硬件。它广泛用于业余爱好者，学术和商业环境，以支持无线通信研究和现实世界的无线电系统。
+**[GNU Radio](https://www.gnuradio.org/)** 是一个免费且开源的软件开发工具包，提供了用于实现软件定义无线电（SDR）和信号处理系统的信号处理模块。它既可以与外部射频硬件配合使用，构建真实的软件定义无线电系统，也可以在无硬件的模拟环境中运行。GNU Radio 广泛应用于业余无线电、学术研究和商业领域，支持无线通信的研究和实际无线电系统的开发。
 
-GNURadio 软件提供了构建和运行软件无线电或仅用于通用信号处理应用程序的框架和工具。GNURadio 应用程序本身通常称为“流程图”，它是连接在一起的一系列信号处理块，从而描述了数据流。这些流程图可以用 C++或 Python 编程语言编写。GNURadio 基础结构完全用 C++编写，而许多用户工具都是用 Python 编写的。
+GNU Radio 提供了一个全面的框架，用于开发和运行软件无线电及信号处理应用。这些应用通常被称为“流程图”（flowgraphs），由多个相互连接的信号处理模块组成，描述了数据的流动过程。流程图可以使用 C++ 或 Python 编程语言编写。GNU Radio 的核心架构完全采用 C++ 实现，而许多用户工具则采用 Python 开发。
 
-与所有软件定义的无线电系统一样，可重配置性是一个关键特性。不为特定硬件而设计，GNU Radio 开放的接口能够轻松地将用户自己地无线电设备接入到 GNU Radio 的生态当中。
+与所有软件定义无线电系统一样，可重构性是其关键特性。GNU Radio 开放的接口使用户能够轻松将自己的无线电设备集成到 GNU Radio 生态系统中，无需针对特定硬件进行设计。
 
 ### ●2.在ubuntu上安装libiio
 
-不同Ubuntu版本有所不同，具体可以参考安装资料：[GNU Radio install](https://wiki.analog.com/resources/tools-software/linux-software/gnuradio)
+不同Ubuntu版本有所不同，具体可以参考[安装资料](https://wiki.analog.com/resources/tools-software/linux-software/gnuradio)
 
 #### ○1.安装系统包
 
@@ -113,11 +112,11 @@ gnuradio-companion
 
 ### ●4. 在 GNU Radio 中使用Pluto
 
-进行前需要先使用 Pluto 固件，PLTUO 固件使用方法可在此处查看 [Unpacking Examination](./AntsdrE310_Unpacking_examination_cn.md)
+进行前需要先使用 Pluto 固件，Pluto固件使用方法可在[此处](./AntsdrE310_Unpacking_examination_cn.md)
 
 您可以在这里找到 antsdr gnuradio 示例：
 
-[GNU Radio](https://github.com/MicroPhase/gnu-radio-demo)
+您可以在[这里](https://github.com/MicroPhase/gnu-radio-demo)找到 ANTSDR GNU 示例。
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/gnuradio_test.png)
 

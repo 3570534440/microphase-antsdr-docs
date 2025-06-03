@@ -2,13 +2,13 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_Unpacking_examination_cn.html)
 
-### ●1. Overview
+### 1. Overview
 
 The E200 is a software-defined radio (SDR) platform designed for makers and SDR enthusiasts, while also suitable for professional application scenarios. It supports wideband RF signal transmission and reception from 70 MHz to 6 GHz. The device can be controlled via Gigabit Ethernet or operate independently through programming. With abundant open-source project support and learning resources, users can explore a wide range of applications.
 
 ![e200](./ANTSDR_E200_Reference_Manual.assets/e200.png)
 
-### ●2. Package Contents
+### 2. Package Contents
 
 Thank you for purchasing the ANTSDR series SDR platform from MicroPhase Technology .Upon receiving your ANTSDR E200 (Standard Edition), open the accessory kit, which should include the following items:
 
@@ -26,13 +26,13 @@ Thank you for purchasing the ANTSDR series SDR platform from MicroPhase Technolo
 
 After unpacking, please check all items.
 
-### ●3. ANTSDR Driver Software Installation
+### 3. ANTSDR Driver Software Installation
 
 Next, use the **Pluto firmware** to receive radio broadcasts.
 
 The ANTSDR E200 comes preloaded with both Pluto and UHD firmware options. By default, the Pluto firmware is stored in the QSPI flash. To receive broadcasts using the Pluto firmware, simply set the DIP switch to boot from QSPI. Alternatively, you can load the Pluto firmware onto an SD card and boot from it instead.
 
-If you do not have the Pluto firmware, you can download it from GitHub:[download ANTSDR Pluto firmware](https://github.com/MicroPhase/antsdr-fw-patch/releases)。
+If you do not have the Pluto firmware, you can download it from GitHub:[Download ANTSDR Pluto firmware](https://github.com/MicroPhase/antsdr-fw-patch/releases)。
 
 Since the Pluto firmware is pre-installed on the E200, using it is straightforward. The default IP address of the Pluto firmware is `192.168.1.10` , with the username and password being `root` and `analog` respectively, and the baud rate set to `115200`.
 

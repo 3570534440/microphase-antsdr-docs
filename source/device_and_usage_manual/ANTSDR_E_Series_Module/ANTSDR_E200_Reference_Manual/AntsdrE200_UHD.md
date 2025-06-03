@@ -3,7 +3,7 @@
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_UHD_cn.html)
 
 
-You can find this project on GitHub：[Antsdr UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md) ,Different versions have different differences.
+You can find this project on GitHub：[ANTSDR UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md) ,Different versions have different differences.
 
 ### Build on Ubuntu
 #### Build Dependencies

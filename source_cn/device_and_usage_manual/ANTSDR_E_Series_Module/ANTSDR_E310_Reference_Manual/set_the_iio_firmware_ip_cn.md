@@ -2,10 +2,10 @@
 
 [[English]](../../../../device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E310_Reference_Manual/set_the_iio_firmware_ip.html)
 
-如果您想在使用**plutosdr**兼容固件时使用多个ANTSDR-E310设备，您将需要本指南来设置mac和ip地址。
+如果您想在使用**PlutoSdr**固件时兼容使用多个ANTSDR-E310设备，您将需要本指南来设置MAC和IP地址。
 
 ## QSPI 启动模式
-### 设置 mac 地址
+### 设置 MAC 地址
 1. 
     您可以通过ssh或者串口工具进入E310的linux系统，默认ip为 `192.168.1.10`，串口波特率为 `115200`，使用网口时请确保可以 ping 通开发板。
 
@@ -23,13 +23,13 @@
     ```
 
 3. 
-    然后输入命令reboot重启设备或者重新上电。
+    然后输入`reboot`命令重启设备或者重新上电。
     ```sh
     reboot
     ```
 
 4. 
-    如果没有其他反应，进入系统就可以使用 `ifconfig` 命令查看mac地址是否修改成功。
+    如果没有其他反应，可以进入系统使用 `ifconfig` 命令查看MAC地址是否修改成功。
 
     ```txt
     # ifconfig 
@@ -59,35 +59,35 @@
             RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
     
     ```
-    网卡eth0的mac地址修改成功。
+    可以看到网卡`eth0`的MAC地址修改成功。
 
 ### 设置 IP
 
-默认ip为 `192.168.1.10`，如果需要修改ip也需要进入系统。
+默认IP为 `192.168.1.10`，如果需要修改IP也需要进入系统。
 
 1. 
-    如果只是需要临时修改ip地址的话，可以使用 `ifconfig` 命令就像在 ubuntu 系统上修改ip一样就可以了。
+    如果只是需要临时修改IP地址的话，可以像在 Ubuntu 系统上修改IP一样使用 `ifconfig` 命令进行修改。
 
-    **但是此方法重启设备后会恢复默认IP地址（192.168.1.10）。**
+    **使用此方法，重启设备后会恢复默认IP地址（192.168.1.10）。**
 
 2. 
-    如果要永久修改ip地址，就必须使用这样的 `fw_setenv` 命令。
+    如果要永久修改IP地址，就必须使用 `fw_setenv` 命令。
     ```sh
     fw_setenv ipaddr_eth 192.168.2.1
     ```
 
 3. 
-    然后重新启动设备。
+    重新启动设备。
 
 
 ## SD 启动模式
-### 设置 mac地址
+### 设置 MAC 地址
 1. 
-    如果是sd卡启动模式，那么需要修改sd卡 `uEnv.txt` 文件. 找到 ```ethaddr=00:0a:35:00:01:22``` 并改变它 ```ethaddr=xx:xx:xx:xx:xx:xx```
+    如果是SD卡启动模式，那么需要修改SD卡 `uEnv.txt` 文件. 找到 ```ethaddr=00:0a:35:00:01:22``` 并改变它 ```ethaddr=xx:xx:xx:xx:xx:xx```
 
     然后重新启动设备。
 
 
 ### 设置 IP
 
-通过启动sd卡更改ip的方法与通过qspi启动更改ip的方法相同。
+通过SD卡启动更改IP的方法与通过QSPI启动更改IP的方法相同。

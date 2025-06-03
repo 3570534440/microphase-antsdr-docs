@@ -4,4 +4,4 @@
 
 About the usage of ANTSDR E200 matlab ，You can refer to E310：
 
-[Antsdr MATLAB](../ANTSDR_E310_Reference_Manual/AntsdrE310_matlab.md)，The method is similar to E310 and is also applicable to this project.
+[ANTSDR MATLAB](../ANTSDR_E310_Reference_Manual/AntsdrE310_matlab.md)，The method is similar to E310 and is also applicable to this project.

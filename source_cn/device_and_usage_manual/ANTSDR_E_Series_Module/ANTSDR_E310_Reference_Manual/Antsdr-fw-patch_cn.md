@@ -4,7 +4,7 @@
 
 该存储库用于制作 Microphase 软件无线电设备固件。
 
-你可以在GitHub上找到这个项目的地址: [ANTSDR-fw-patch](https://github.com/MicroPhase/antsdr-fw-patch). 不同版本有不同的区别。
+你可以在GitHub上找到这个项目的地址: [ANTSDR-FW-Patch](https://github.com/MicroPhase/antsdr-fw-patch). 不同版本有不同的区别。
 
 ### 构建说明
 
@@ -32,8 +32,7 @@ sudo apt-get remove libfdt-de
 		```
 2. 工具链
 
-   由于 Vivado/Vitis 附带的 AMD/Xilinx GCC 工具链与 Buildroot 不兼容，本项目已切换到 Buildroot 外部 工具链: Linaro GCC 7.3-2018.05 7.3.1
-   [https://releases.linaro.org/components/toolchain/binaries/7.3-2018.05/arm-linux-gnueabihf/](https://releases.linaro.org/components/toolchain/binaries/7.3-2018.05/arm-linux-gnueabihf/)
+   由于 **Vivado/Vitis** 附带的 AMD/Xilinx GCC 工具链与 **Buildroot** 不兼容，本项目已切换到 **Buildroot** 外部 工具链: **[Linaro GCC 7.3-2018.05 7.3.1](https://releases.linaro.org/components/toolchain/binaries/7.3-2018.05/arm-linux-gnueabihf/)**
 
 
 3. 设置环境变量
@@ -169,7 +168,7 @@ make sdimg
 
 ### DFU
 
-DFU 模式仅适用于 ANTSDR E310 和 ANTSDR E316，不支持 E200。如果您的设备是 E310，您可以通过 DFU 模式更新闪存。将跳线设置为 Flash Boot 模式。设备通电后，按下 DFU 按钮，您将看到设备中的两个 LED 指示灯均变为绿色，现在就可以更新闪存了。您需要先进入 build 文件夹，然后将 Micro USB 插入 OTG 接口。然后，运行以下命令。
+DFU 模式仅适用于 ANTSDR E310 和 ANTSDR E316，**不支持 E200**。如果您的设备是 E310，您可以通过 DFU 模式更新闪存。将跳线设置为 Flash Boot 模式。设备通电后，按下 DFU 按钮，您将看到设备中的两个 LED 指示灯均变为绿色，现在就可以更新闪存了。您需要先进入 build 文件夹，然后将 Micro USB 插入 OTG 接口。然后，运行以下命令。
 ```sh
 sudo dfu-util -a firmware.dfu -D ./ant.dfu
 sudo dfu-util -a boot.dfu -D ./boot.dfu

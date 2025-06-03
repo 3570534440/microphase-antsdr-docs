@@ -9,8 +9,9 @@
 
 ### ●2. 安装 libiio
 
-如果你没有安装 libiio，请先安装 libiio，
-您可以参考此链接来安装 **[Libiio](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio#:~:text=Libiio%20is%20a%20library%20that%20has%20been%20developed,of%20software%20interfacing%20Linux%20Industrial%20I%2FO%20%28IIO%29%20devices.)**
+如果您没有安装 **libiio**，请先进行安装。 
+
+有关 **libiio** 的安装，请参阅[官方指南](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio#:~:text=Libiio%20is%20a%20library%20that%20has%20been%20developed,of%20software%20interfacing%20Linux%20Industrial%20I%2FO%20%28IIO%29%20devices.)或者参阅 [《E310 GNU Radio》](./AntsdrE310_gnurdio_cn.md)
 
 或者
 
