@@ -5,17 +5,17 @@ Get Started
 
     <a href="../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E_Series_Module_cn.html"> [中文] </a>
 
-This document is designed to help you quickly understand how to use ANTSDR, including software and hardware.
+This document is designed to help you quickly get started with using ANTSDR, including both its software and hardware components.
 
-If you want to get started quickly, please see **Unpacking examination**.
-Please refer to 
+For a quick introduction, please refer to the **Unboxing and Inspection**.
+You can find detailed unboxing and setup instructions for different models here:
 :doc:`E310 <ANTSDR_E310_Reference_Manual/AntsdrE310_Unpacking_examination>` ,
 :doc:`E200 <ANTSDR_E200_Reference_Manual/AntsdrE200_Unpacking_examination>` ,
 :doc:`E316 <ANTSDR_E316_Reference_Manual/AntsdrE316_Unpacking_examination>`.
-If you want to learn about hardware parameters, please see the **Hardware manual**. 
-If you want to know the RF parameters, please see **RF parameters**.
+To learn more about the hardware specifications, please refer to the **Hardware Manual**.
+For detailed RF specifications, please consult the **RF Parameters**.
 
-Antsdr has excellent power consumption performance, RF performance, stability, versatility and reliability, and is suitable for various application scenarios and different power consumption requirements.
+ANTSDR offers outstanding power efficiency, RF performance, stability, versatility, and reliability, making it well-suited for a wide range of application scenarios and power consumption requirements.
 
 E310 
 =======================
