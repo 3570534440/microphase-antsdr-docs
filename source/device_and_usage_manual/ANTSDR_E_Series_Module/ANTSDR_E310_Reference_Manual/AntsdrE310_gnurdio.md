@@ -197,7 +197,7 @@ The FMCOMMS-2 IIO blocks can run over the IP network or USB. By setting the “I
 
 ○**Gain Mode(RX1, RX2)**: Selects one of the available modes: manual, slow_attack, hybrid and fast_attack. [Read more](https://wiki.analog.com/resources/tools-software/linux-drivers/iio-transceiver/ad9361#gain_control_modes)
 
-![e310](./ANTSDR_E310_Reference_Manual.assets/fmcomms_source.png)
+![e310](./ANTSDR_E310_Reference_Manual.assets/fmcomms_sink.png)
 
 
 #### ●FMCOMMS Sink
