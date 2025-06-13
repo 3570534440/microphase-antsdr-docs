@@ -2,6 +2,6 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/Antsdr-fw-patch_cn.html)
 
-About ANTSDR E200 pluto firmware compilation method，You can refer to E310：
+For information on using ANTSDR E200 with Pluto firmware，please refer to E310: [ANTSDR FW Patch](../ANTSDR_E310_Reference_Manual/Antsdr-fw-patch.md).
 
-[ANTSDR FW Patch](../ANTSDR_E310_Reference_Manual/Antsdr-fw-patch.md)，The method is similar to E310 and is also applicable to this project.
+The same method is applicable to this device.

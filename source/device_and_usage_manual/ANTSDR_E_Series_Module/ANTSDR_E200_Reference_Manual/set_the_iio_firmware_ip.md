@@ -62,16 +62,16 @@ If you want to use multiple ANTSDR-E200 devices when using **PlutoSDR** compatib
     ```
     The mac address of the network card `eth0` has been successfully modified.
 
-#### Set ip 
-The default ip is `192.168.1.10` , if you need to modify the ip, you also need to enter the system.
+#### Set IP 
+The default IP is `192.168.1.10` , if you need to modify the IP, you also need to enter the system.
 
 1. 
-    If you just need to temporarily modify the ip address, you can use the `ifconfig` command like modifying the ip on the ubuntu system is enough.
+    If you just need to temporarily modify the IP address, you can use the `ifconfig` command like modifying the IP on the ubuntu system is enough.
 
-    **However, this method will restore the default ip address(192.168.1.10) after restarting the device.**
+    **However, this method will restore the default IP address(192.168.1.10) after restarting the device.**
 
 2. 
-    If you want to permanently modify the ip address, you must use the `fw_setenv` command such as this.
+    If you want to permanently modify the IP address, you must use the `fw_setenv` command such as this.
     ```sh
     fw_setenv ipaddr_eth 192.168.2.1
     ```
@@ -88,8 +88,8 @@ The default ip is `192.168.1.10` , if you need to modify the ip, you also need t
     Then start the device.
 
 
-#### Set ip
-The method of changing ip by starting sd card is the same as starting and changing ip by qspi.
+#### Set IP
+The method of changing IP by starting sd card is the same as starting and changing IP by qspi.
 
 
 
@@ -102,7 +102,7 @@ Setting the E200 IP address using uhd firmware
 
 UHD firmware can only be started under the SD card, so in order to conveniently set the IP, it can be modified after entering the system.
 
-1. You can enter the linux system of E200 through ssh or serial port tool. The default ip is `192.168.1.10` and the baud rate of the serial port is `115200`. when using the network port, please make sure you can ping the board. 
+1. You can enter the Linux system of E200 through ssh or serial port tool. The default IP is `192.168.1.10` and the baud rate of the serial port is `115200`. when using the network port, please make sure you can ping the board. 
 
     **Default login credentials**:
 
@@ -110,7 +110,7 @@ UHD firmware can only be started under the SD card, so in order to conveniently 
 
     - Password: `microphase`
 
-2. After enter the linux system, Set the mac address **using the command ip_set**, for example.
+2. After enter the Linux system, Set the mac address **using the command` ip_set`**, for example.
 
    ```sh
    # ip_set 192.168.1.10
@@ -118,7 +118,7 @@ UHD firmware can only be started under the SD card, so in order to conveniently 
    /** write ip succeed **/
    ```
 
-3. reboot
+3. Reboot
 
 4. If nothing else, Enter system and you can use the ifconfig command to check that the ip address has been successfully modified.
 

@@ -32,7 +32,7 @@ Next, use the **Pluto firmware** to receive radio broadcasts.
 
 The ANTSDR E200 comes preloaded with both Pluto and UHD firmware options. By default, the Pluto firmware is stored in the QSPI flash. To receive broadcasts using the Pluto firmware, simply set the DIP switch to boot from QSPI. Alternatively, you can load the Pluto firmware onto an SD card and boot from it instead.
 
-If you do not have the Pluto firmware, you can download it from GitHub:[Download ANTSDR Pluto firmware](https://github.com/MicroPhase/antsdr-fw-patch/releases)。
+If you do not have the Pluto firmware, you can download it from GitHub: [Download ANTSDR Pluto firmware](https://github.com/MicroPhase/antsdr-fw-patch/releases)。
 
 Since the Pluto firmware is pre-installed on the E200, using it is straightforward. The default IP address of the Pluto firmware is `192.168.1.10` , with the username and password being `root` and `analog` respectively, and the baud rate set to `115200`.
 

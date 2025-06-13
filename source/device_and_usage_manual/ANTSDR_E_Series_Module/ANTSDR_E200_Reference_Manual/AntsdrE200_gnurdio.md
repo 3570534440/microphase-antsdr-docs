@@ -2,6 +2,7 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_gnurdio_cn.html)
 
-About the usage of ANTSDR E200 gnuradio，You can refer to E310：
+For information on using ANTSDR E200 with GNU Radio, please refer to E310: [ANTSDR GNU Radio](../ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.md).
 
-[ANTSDR GNU Radio](../ANTSDR_E310_Reference_Manual/AntsdrE310_gnurdio.md)，The method is similar to E310 and is also applicable to this project.
+The same method is applicable to this device.
+

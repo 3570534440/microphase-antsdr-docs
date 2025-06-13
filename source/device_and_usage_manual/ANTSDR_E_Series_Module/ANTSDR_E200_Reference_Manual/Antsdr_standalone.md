@@ -5,6 +5,7 @@
 
 [Latest Project Address](https://github.com/MicroPhase/antsdr_standalone)
 
-For the usage of ANTSDR E200 no-OS, You can refer to E310：
+For using the ANTSDR E200 no-OS, please refer to the E310 guide: [ANTSDR Standalone (no-OS)](../ANTSDR_E310_Reference_Manual/Antsdr_standalone.md). 
 
-[ANTSDR Standalone (no-OS)](../ANTSDR_E310_Reference_Manual/Antsdr_standalone.md)，The method is similar to E310 and is also applicable to this project.
+The same method is applicable to this device.
+

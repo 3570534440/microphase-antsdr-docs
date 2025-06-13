@@ -3,7 +3,7 @@
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/AntsdrE200_UHD_cn.html)
 
 
-You can find this project on GitHub：[ANTSDR UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md) ,Different versions have different differences.
+You can find this project on GitHub: [ANTSDR UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md). Different versions have different differences.
 
 ### Build on Ubuntu
 #### Build Dependencies
@@ -33,10 +33,10 @@ make
 sudo make install
 sudo ldconfig
 ```
-The default installation path: /usr/local/lib/uhd
+The default installation path: `/usr/local/lib/uhd`
 
 ### Test with e200
-After connecting the netword port and powering the e200, run the command uhd_usrp_probe. The running example is as follows:
+After connecting the network port and powering on the E200, run the command `uhd_usrp_probe`. An example output is shown below:
 ```
 jcc@jcc:~$ uhd_usrp_probe 
 [INFO] [UHD] linux; GNU C++ version 8.4.0; Boost_106501; UHD_3.15.0.dev-0-8b82588b
@@ -111,6 +111,5 @@ jcc@jcc:~$ uhd_usrp_probe
 |   |   |   |   Name: ANTSDR-EXXX TX dual DAC
 |   |   |   |   Gain Elements: None
 ```
-When you can see the above output, uhd can run on the e200.
-
+When you see the above output, it means UHD is successfully running on the E200.
 
