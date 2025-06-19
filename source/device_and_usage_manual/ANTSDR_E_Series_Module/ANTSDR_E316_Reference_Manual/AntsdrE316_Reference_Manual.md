@@ -7,7 +7,7 @@ E316 is a software-defined radio (SDR) designed for professional applications, s
 
 ANTSDR has accumulated a wealth of successful use cases in the field of radio applications, including spectrum monitoring, UAVs, GPS, and radio signal analysis.
 
-![](./AntsdrE316_Reference_Manual.assets/%E7%94%BB%E6%9D%BF%202.jpg)
+![](./AntsdrE316_Reference_Manual.assets/E316.jpg)
 
 ### Hardware Resources
 
