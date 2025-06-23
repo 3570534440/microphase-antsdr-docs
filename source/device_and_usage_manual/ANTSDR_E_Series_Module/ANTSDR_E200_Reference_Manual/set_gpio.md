@@ -1,4 +1,4 @@
-## Set GPIO
+## Set Firmware IP
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E200_Reference_Manual/set_gpio_cn.html)
 
@@ -14,7 +14,7 @@ END=1002
 
 for i in $(seq $START $END); do
   echo $i > /sys/class/gpio/export 2>/dev/null
-  echo out > /sys/clhttps://microphase-antsdr-docs.readthedocs.io/en/latest/About_Us/About%20Us.html#contact-usass/gpio/gpio$i/direction
+  echo out > /sys/class/gpio/gpio$i/direction
 done
 
 echo "Flip 995~1002..."

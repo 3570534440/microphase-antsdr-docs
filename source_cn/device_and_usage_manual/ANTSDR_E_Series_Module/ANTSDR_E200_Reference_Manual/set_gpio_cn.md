@@ -13,7 +13,7 @@ END=1002
 
 for i in $(seq $START $END); do
   echo $i > /sys/class/gpio/export 2>/dev/null
-  echo out > /sys/clhttps://microphase-antsdr-docs.readthedocs.io/en/latest/About_Us/About%20Us.html#contact-usass/gpio/gpio$i/direction
+  echo out > /sys/class/gpio/gpio$i/direction
 done
 
 echo "Flip 995~1002..."
