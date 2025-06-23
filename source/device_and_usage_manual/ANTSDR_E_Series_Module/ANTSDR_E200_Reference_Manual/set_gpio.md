@@ -30,25 +30,3 @@ while true; do
   sleep 0.5
 done
 ```
-### UHD firmware
-
-When you use the UHD firmware, there are also 8 user-operable GPIOs. If you want to use these 8 GPIOs, you can refer to the following code
-```
-    std::cout << "Using GPIO bank: FP0 "<< std::endl;
-
-    usrp->set_gpio_attr("FP0", "DDR", 0xff, 0xff); 
-    // set control register 
-    usrp->set_gpio_attr("FP0", "CTRL", 0, 0xff);    
-
-    while (1) {
-        usrp->set_gpio_attr("FP0", "OUT", 0xFF, 0xFF);  
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-        uint32_t rb = usrp->get_gpio_attr("FP0", "READBACK");
-        std::cout << "READBACK: " << std::hex << rb << std::endl;
-
-        usrp->set_gpio_attr("FP0", "OUT", 0x00, 0xFF); 
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-        rb = usrp->get_gpio_attr("FP0", "READBACK");
-        std::cout << "READBACK: " << std::hex << rb << std::endl;
-    }
-```

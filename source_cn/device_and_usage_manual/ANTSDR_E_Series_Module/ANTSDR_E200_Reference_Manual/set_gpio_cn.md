@@ -29,24 +29,3 @@ while true; do
   sleep 0.5
 done
 ```
-### UHD firmware
-当您使用uhd固件的时候，也有8个用户可以操作的gpio，如果您要使用这8个gpio，您可以参考下面的代码,该使用方法和uhd官方的使用方法没有区别
-```
-    std::cout << "Using GPIO bank: FP0 "<< std::endl;
-
-    usrp->set_gpio_attr("FP0", "DDR", 0xff, 0xff); 
-    // set control register 
-    usrp->set_gpio_attr("FP0", "CTRL", 0, 0xff);   
-
-    while (1) {
-        usrp->set_gpio_attr("FP0", "OUT", 0xFF, 0xFF);  
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-        uint32_t rb = usrp->get_gpio_attr("FP0", "READBACK");
-        std::cout << "READBACK: " << std::hex << rb << std::endl;
-
-        usrp->set_gpio_attr("FP0", "OUT", 0x00, 0xFF); 
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-        rb = usrp->get_gpio_attr("FP0", "READBACK");
-        std::cout << "READBACK: " << std::hex << rb << std::endl;
-    }
-```
