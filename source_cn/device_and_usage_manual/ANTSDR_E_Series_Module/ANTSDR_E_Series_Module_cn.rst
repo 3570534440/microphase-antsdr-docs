@@ -169,6 +169,11 @@ E200
    :titlesonly:
 
    ANTSDR_E200_Reference_Manual/set_the_iio_firmware_ip
+.. toctree::
+   :maxdepth:2
+   :titlesonly:
+
+   ANTSDR_E200_Reference_Manual/set_gpio_cn
 E316 
 =======================
 .. toctree::
