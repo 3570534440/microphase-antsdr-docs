@@ -1,5 +1,7 @@
 ## U200 硬件手册
 
+[[English]](../../../../device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU200_Reference_Manual.html)
+
 ### 概述
 
 与ANTSDR E系列不同,U系列采用了USB3.0接口,5Gbps瞬时速率，可以轻松跑满AD9361的最大带宽。基带芯片采用Xilinx Artix-7 XC7A100T, 对于对成本敏感且对性能有非常高需求的用户，U200可以轻松应对。

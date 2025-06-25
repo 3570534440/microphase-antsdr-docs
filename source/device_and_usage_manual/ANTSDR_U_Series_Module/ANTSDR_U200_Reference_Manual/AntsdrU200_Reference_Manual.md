@@ -1,6 +1,6 @@
 ## U200 Hardware Manual
 
-[[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrEU200_Reference_Manual_cn.html)
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU200_Reference_Manual_cn.html)
 
 ###  Overview
 

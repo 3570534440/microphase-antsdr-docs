@@ -1,6 +1,6 @@
 ## U220 Hardware Manual
 
-[[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U220_Reference_Manual/AntsdrEU220_Reference_Manual_cn.html)
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual_cn.html)
 
 ### Overview
 
