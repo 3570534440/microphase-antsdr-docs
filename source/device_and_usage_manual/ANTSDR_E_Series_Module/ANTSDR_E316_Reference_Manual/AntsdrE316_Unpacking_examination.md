@@ -1,49 +1,51 @@
 ## E316 Unboxing and Inspection
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E316_Reference_Manual/AntsdrE316_Unpacking_examination_cn.html)
 
-### 1. 概述
+### 1. Overview
 
-E316 是一款面向专业应用场景的软件无线电,支持70 MHz - 6 GHz 的宽频段射频信号收发，既可以作为 USB 外设使用，也可以通过编程实现脱机运行。经过两代产品的迭代，E316具有更强的发射功率，更优的接收灵敏度，更低的底噪和相噪，更完善的无线应用接口。ANTSDR在无线电应用领域已经积累了丰富的成功应用案例，涵盖频谱监测,无人机，GPS，无线电分析等多个方向。
+The E316 is a software-defined radio (SDR) designed for professional applications, supporting wideband RF signal transmission and reception from 70 MHz to 6 GHz. It can operate as a USB peripheral or run standalone via programmable control. After two generations of refinement, the E316 features enhanced transmit power, improved receive sensitivity, lower noise floor and phase noise, and a more comprehensive wireless application interface. ANTSDR has accumulated a wealth of successful application cases in fields such as spectrum monitoring, UAVs, GPS, and radio signal analysis.
 
 ![E316](./AntsdrE316_Unpacking_examination.assets/E316-1750413194179-10.jpg)
 
-### 2. 物品清单
+### 2. Package Contents
 
-感谢您购买微相科技有限公司的 ANTSDR 系列软件无线电平台，当您拿到ANTSDR E316（标准版）之后，打开配件包，其中应包含如下内容，
+Thank you for purchasing the ANTSDR series SDR platform from Weixiang Technology Co., Ltd.
+Upon receiving your ANTSDR E316 (Standard Edition), please open the accessory pack. The following items should be included:
 
-- ANTSDR 软件无线电: X1
-- USB 数据线: X2 
-- 胶棒天线: X2
-- 托盘天线: X1
-- 网线: X1
-- 32GB SD 卡 X1
+- ANTSDR Software-Defined Radio: ×1
+- USB Data Cables: ×2
+- Rubber Antennas: ×2
+- Tray Antenna: ×1
+- Ethernet Cable: ×1
+- 32GB SD Card X1
 
-### 3. 使用 **Pluto 固件**收听广播
+### 3. Listen to the radio using **Pluto firmware**
 
-用于启动模式切换的 DIP 开关位于以太网口下方，可见 “BOOT / QSPI / SD” 标识。
-ANTSDR E316 出厂时，SD 卡和 QSPI 中均已烧录 Pluto 固件，因此无论从 QSPI 还是 SD 启动，系统均加载 Pluto 固件，无需额外操作即可使用。
+The DIP switch for selecting the boot mode is located below the Ethernet port and is labeled "BOOT/QSPI/SD".
+ANTSDR E316 comes pre-installed with Pluto firmware in QSPI memory. QSPI boot is Pluto firmware, SD card boot is UHD firmware
 
-设备启动成功后，绿色指示灯会闪烁。
+When the device boots successfully, the green status LED will flash.
 
-若设备中未安装 Pluto 固件，可从 [GitHub 下载](https://github.com/MicroPhase/antsdr-fw-patch/releases)并烧录。
+If Pluto firmware is not installed on the device ，You can download and burn it from [GitHub Download](https://github.com/MicroPhase/antsdr-fw-patch/releases).
 
-Pluto 固件默认配置如下：
+The default configuration of Pluto firmware is as follows:
 
-- **IP 地址**：192.168.1.10
-- **用户名 / 密码**：root / analog
-- **串口波特率**：115200
+- **IP Address**: 192.168.1.10
+- **Username / Password**: root / analog
+- **Baud Rate**: 115200
 
-#### ● Windows 系统
+#### ● Windows 
 
-[下载PlutoSdr驱动](https://wiki.analog.com/university/tools/pluto/drivers/windows)
+[Download PlutoSDR Drivers](https://wiki.analog.com/university/tools/pluto/drivers/windows)
 
-[下载串口驱动](https://ftdichip.com/wp-content/uploads/2021/08/CDM212364_Setup.zip)
+[Download Serial Drivers](https://ftdichip.com/wp-content/uploads/2021/08/CDM212364_Setup.zip)
 
-○1. 安装 Windows 驱动程序： **CDM212364_Setup.exe** 和 **PlutoSDR-M2K-USB-Drivers.exe**
+○1. Install Windows drivers： **CDM212364_Setup.exe** and **PlutoSDR-M2K-USB-Drivers.exe**.
 
-将网线一端连接到ANTSDR，另一端连接到电脑。连接天线到RX1端口
+Then, connect one end of the network cable to the ANTSDR device and the other end to your computer. Connect the antenna to the RX1 port.
 
-![e310](./AntsdrE316_Unpacking_examination.assets/E310_connect_.png)
+
+![e310](./AntsdrE316_Reference_Manual.assets/E316_connect.png)
 
 ○2. 之后，您可以在 **计算机管理 → 设备管理器** 中看到 **PlutoSDR** 设备。
 
@@ -81,7 +83,7 @@ ANTSDR设备IP为`192.168.1.10`
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/linux_ping192.168.1.10.png)
 
-○2. 关于 **libiio** 的安装，请参阅 [官方指南](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio)，或参考[《E310 GNU Radio》](./AntsdrE310_gnurdio_cn.md)。
+○2. 关于 **libiio** 的安装，请参阅 [官方指南](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio)，或参考[《E310 GNU Radio》](./AntsdrE316_gnurdio.md)。
 
 
 ○3. 如果已经安装了 **libiio** ，执行`iio_info -s`
@@ -92,4 +94,4 @@ ANTSDR设备IP为`192.168.1.10`
 打开 **SDR++** 软件,适当调整增益。
 连接成功后，即可开始收听广播。
 
-![e310](./ANTSDR_E310_Reference_Manual.assets/linux_sdr++.png)
+![e310](../ANTSDR_E310_Reference_Manual/ANTSDR_E310_Reference_Manual.assets/linux_sdr++.png)

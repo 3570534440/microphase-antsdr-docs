@@ -50,7 +50,10 @@ Default configuration of the Pluto firmware:
 [Download Serial Drivers](https://ftdichip.com/wp-content/uploads/2021/08/CDM212364_Setup.zip)
 
 ○1. Install Windows drivers： **CDM212364_Setup.exe** and **PlutoSDR-M2K-USB-Drivers.exe**.
+
+
 Then, connect one end of the network cable to the ANTSDR device and the other end to your computer. Connect the antenna to the RX1 port.
+
 ![e310](./ANTSDR_E310_Reference_Manual.assets/E310_connect_.png)
 ○2.After that, you should be able to see the PlutoSDR device in **Computer Management → Device Manager**.
 
