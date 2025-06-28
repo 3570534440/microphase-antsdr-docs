@@ -1,18 +1,19 @@
 # Set Firmware IP
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_E_Series_Module/ANTSDR_E316_Reference_Manual/set_the_iio_firmware_ip.html)
 
-## ●pluto firmware
-If you want to use multiple ANTSDR-E316 devices when using **plutosdr** compatible firmware, you will need this guide to set the mac and ip address.
-### QSPI Flash boot mode
-#### ○Set mac address
-1. 
-    You can enter the linux system of E316 through ssh or serial port tool. The default ip is **192.168.1.10** and the baud rate of the serial port is **115200**. when using the network port, please make sure you can ping the board. 
 
-    The **default username and password**:
-    
-    username:root 
-    
-    password:**analog**
+### Pluto Firmware
+If you want to use multiple ANTSDR-E200 devices when using **PlutoSDR** compatible firmware, you will need this guide to set the mac and ip address.
+### QSPI Flash boot mode
+#### Set mac address
+1. 
+    You can enter the linux system of E200 through ssh or serial port tool. The default ip is `192.168.1.10` and the baud rate of the serial port is `115200`. when using the network port, please make sure you can ping the board. 
+
+    **Default login credentials**:
+
+    - Username: `root`
+
+    - Password: `analog`
 
 2. 
     After enter the linux system, Set the mac address **using the command fw_setenv**, for example.
@@ -28,7 +29,7 @@ If you want to use multiple ANTSDR-E316 devices when using **plutosdr** compatib
     ```
 
 4. 
-    If nothing else, Enter system and you can use the ifconfig command to check that the mac address has been successfully modified.
+    If nothing else, Enter system and you can use the `ifconfig` command to check that the mac address has been successfully modified.
 
     ```txt
     # ifconfig 
@@ -58,18 +59,18 @@ If you want to use multiple ANTSDR-E316 devices when using **plutosdr** compatib
             RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
     
     ```
-    The mac address of the network card eth0 has been successfully modified.
+    The mac address of the network card `eth0` has been successfully modified.
 
-#### ○Set ip 
-The default ip is 192.168.1.10, if you need to modify the ip, you also need to enter the system.
+#### Set IP 
+The default IP is `192.168.1.10` , if you need to modify the IP, you also need to enter the system.
 
 1. 
-    If you just need to temporarily modify the ip address, you can use the **ifconfig** command like modifying the ip on the ubuntu system is enough.
+    If you just need to temporarily modify the IP address, you can use the `ifconfig` command like modifying the IP on the ubuntu system is enough.
 
-    **However, this method will restore the default ip address(192.168.1.10) after restarting the device.**
+    **However, this method will restore the default IP address(192.168.1.10) after restarting the device.**
 
 2. 
-    If you want to permanently modify the ip address, you must use the **fw_setenv** command such as this.
+    If you want to permanently modify the IP address, you must use the `fw_setenv` command such as this.
     ```sh
     fw_setenv ipaddr_eth 192.168.2.1
     ```
@@ -79,35 +80,36 @@ The default ip is 192.168.1.10, if you need to modify the ip, you also need to e
 
 
 ### SD card boot mode
-#### ○Set mac address
+#### Set mac address
 1. 
-    If it is in the sd card boot mode, then you need to modify the sd card uEnv.txt file. Find ```ethaddr=00:0a:35:00:01:22``` and change it ```ethaddr=xx:xx:xx:xx:xx:xx```
+    If it is in the sd card boot mode, then you need to modify the sd card `uEnv.txt` file. Find ```ethaddr=00:0a:35:00:01:22``` and change it ```ethaddr=xx:xx:xx:xx:xx:xx```
 
     Then start the device.
 
 
-#### ○Set ip
-The method of changing ip by starting sd card is the same as starting and changing ip by qspi.
+#### Set IP
+The method of changing IP by starting sd card is the same as starting and changing IP by qspi.
 
 
 
-## ●UHD firmware
 
-This document allows you to quickly set the IP address of the E200 under uhd firmware.
+### UHD firmware
 
-### SD card boot mode
+Setting the E200 IP address using uhd firmware
+
+#### SD card boot mode
 
 UHD firmware can only be started under the SD card, so in order to conveniently set the IP, it can be modified after entering the system.
 
-1. You can enter the linux system of E200 through ssh or serial port tool. The default ip is **192.168.1.10** and the baud rate of the serial port is **115200**. when using the network port, please make sure you can ping the board. 
+1. You can enter the Linux system of E200 through ssh or serial port tool. The default IP is `192.168.1.10` and the baud rate of the serial port is `115200`. when using the network port, please make sure you can ping the board. 
 
-   The **default username and password**:
+    **Default login credentials**:
 
-   username:root 
+    - Username: `root`
 
-   password:**microphase**
+    - Password: `microphase`
 
-2. After enter the linux system, Set the mac address **using the command ip_set**, for example.
+2. After enter the Linux system, Set the mac address **using the command` ip_set`**, for example.
 
    ```sh
    # ip_set 192.168.1.10
@@ -115,7 +117,7 @@ UHD firmware can only be started under the SD card, so in order to conveniently 
    /** write ip succeed **/
    ```
 
-3. reboot
+3. Reboot
 
 4. If nothing else, Enter system and you can use the ifconfig command to check that the ip address has been successfully modified.
 
