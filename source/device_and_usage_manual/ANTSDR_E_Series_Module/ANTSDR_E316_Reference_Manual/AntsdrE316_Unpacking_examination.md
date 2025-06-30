@@ -85,7 +85,7 @@ Once connected, select a radio frequency channel to begin listening.
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/linux_ping192.168.1.10.png)
 
-○2. For **libiio** installation, see the [official guide](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio)，或参考[《E316 GNU Radio》](./AntsdrE316_gnurdio.md)。
+○2. For **libiio** installation, see the [official guide](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio)，or refer to the [《E316 GNU Radio》](./AntsdrE316_gnurdio.md)。
 
 
 ○3.  If **libiio** has already been installed, run the following command to verify device detection:
