@@ -9,8 +9,8 @@ This document is designed to help you quickly get started with using ANTSDR, inc
 
 For a quick introduction, please refer to the **Unboxing and Inspection**.
 You can find detailed unboxing and setup instructions for different models here:
-:doc:`E310 <ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination>` ,
-:doc:`E200 <ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination>` .
+:doc:`U200 <ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination>` ,
+:doc:`U220 <ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination>` .
 To learn more about the hardware specifications, please refer to the **Hardware Manual**.
 For detailed RF specifications, please consult the **RF Parameters**.
 

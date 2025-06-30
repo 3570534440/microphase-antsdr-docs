@@ -8,8 +8,8 @@
 本文档旨在帮助您快速了解如何使用ANTSDR,包括软件和硬件。
 
 如果您想快速入门，请参阅 **开箱检查** 。
-:doc:`E310 <ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination_cn>` ,
-:doc:`E200 <ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination_cn>` .
+:doc:`U200 <ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination_cn>` ,
+:doc:`U220 <ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination_cn>` .
 如果您想了解硬件参数，请参阅 **硬件手册**。
 如果您想了解射频参数，请参阅 **RF**。
 
