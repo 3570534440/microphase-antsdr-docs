@@ -76,6 +76,7 @@ ping 192.168.1.10
 ○5. Receiving Broadcast Signals
 
 Run the **SDRSharp.exe** file in Windows to start listening to the radio.
+
 ![e310](./ANTSDR_E310_Reference_Manual.assets/sdrsharp.png)
 
 The ANTSDR device IP is `192.168.1.10`
@@ -103,9 +104,10 @@ iio_info -s
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/linux_iio_info_s.png)
 
-The device can be connected via Gigabit Ethernet or USB OTG.
+The device can be connected via USB OTG.
  Once connected, launch the **SDR++** software.
  After a successful connection, you can begin listening to radio signals.
-
+Once connected, launch the **SDR++** software.
+After a successful connection, you can begin listening to radio signals.
 
 ![e310](./ANTSDR_E310_Reference_Manual.assets/linux_sdr++.png)

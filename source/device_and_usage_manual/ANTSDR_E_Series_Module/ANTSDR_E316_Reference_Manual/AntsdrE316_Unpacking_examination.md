@@ -47,51 +47,57 @@ Then, connect one end of the network cable to the ANTSDR device and the other en
 
 ![e310](./AntsdrE316_Reference_Manual.assets/E316_connect.png)
 
-○2. 之后，您可以在 **计算机管理 → 设备管理器** 中看到 **PlutoSDR** 设备。
+○2.After that, you should be able to see the PlutoSDR device in **Computer Management → Device Manager**.
 
-如果未显示设备，请检查以下项是否正确：
+If the device is not displayed, please check the following items:
 
-- 固件是否烧录成功
-- 驱动程序是否已正确安装
-- USB OTG 是否正确插入
+- Is the firmware burned successfully
+- Is the driver installed correctly
+- Is the USB OTG correctly inserted
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/pluto_windows.png)
 
-○3.在您电脑的网络适配器中，依次设置本机IP地址、子网掩码、网关。本机IP地址设置为与ANTSDR同一网段，例如 `192.168.1.100` 。子网掩码设置为 `255.255.255.0` ，默认网关设置为 `192.168.1.1` 。
+○3.Configure the local IP address, subnet mask, and default gateway. Ensure the local IP address is within the same subnet as the ANTSDR, for example: `192.168.1.100`. Set the subnet mask to `255.255.255.0` and the default gateway to `192.168.1.1`.
 
-○4. ANTSDR 设备 IP 为 `192.168.1.10`，此时需要打开**CMD**窗口，`ping 192.168.1.10`
+○4. The default IP address of the ANTSDR device is `192.168.1.10`.
+ Open a **CMD** window and execute the following command to check connectivity:
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/ping192168110.png)
 
 
-○5. 收听广播
+○5. Receiving Broadcast Signals
 
-在 Windows 中运行 **SDRSharp.exe** 文件来收听广播
+Run the **SDRSharp.exe** file in Windows to start listening to the radio.
+
 ![e310](./AntsdrE316_Unpacking_examination.assets/sdrsharp.png)
 
-ANTSDR设备IP为`192.168.1.10`
+The ANTSDR device IP is `192.168.1.10`
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/sdrsharp_connect.png)
 
-连接成功后，选择广播频道，开始收听广播。
+Once connected, select a radio frequency channel to begin listening.
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/sdrsharp_fm_plutosdr.png)
 
-#### ● Linux 系统
+#### ● Linux
 
-○1. Pluto 固件默认 IP 为 `192.168.1.10`，将本地 IP 地址设置为 `192.168.1.100`，然后 `ping 192.168.1.100` 。
+○1.  The default IP address of the Pluto firmware is `192.168.1.10`. Set your local IP address to `192.168.1.100`, and then ping `192.168.1.10` to check the connection.
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/linux_ping192.168.1.10.png)
 
-○2. 关于 **libiio** 的安装，请参阅 [官方指南](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio)，或参考[《E310 GNU Radio》](./AntsdrE316_gnurdio.md)。
+○2. For **libiio** installation, see the [official guide](https://wiki.analog.com/resources/eval/user-guides/ad-fmcdaq2-ebz/software/linux/applications/libiio)，或参考[《E316 GNU Radio》](./AntsdrE316_gnurdio.md)。
 
 
-○3. 如果已经安装了 **libiio** ，执行`iio_info -s`
+○3.  If **libiio** has already been installed, run the following command to verify device detection:
+
+```
+iio_info -s
+```
 
 ![e310](./AntsdrE316_Unpacking_examination.assets/linux_iio_info_s.png)
 
-可以通过千兆以太网或 USB OTG 连接。
-打开 **SDR++** 软件,适当调整增益。
-连接成功后，即可开始收听广播。
+The device can be connected via USB OTG.
+Once connected, launch the **SDR++** software.
+After a successful connection, you can begin listening to radio signals.
 
 ![e310](../ANTSDR_E310_Reference_Manual/ANTSDR_E310_Reference_Manual.assets/linux_sdr++.png)
