@@ -24,7 +24,7 @@ U220
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U220_Reference_Manual/AntsdrU220_First boot check
+   ANTSDR_U220_Reference_Manual/AntsdrU220_First_boot_check
 .. toctree::
    :maxdepth:1
    :titlesonly:
@@ -50,7 +50,7 @@ U200
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U200_Reference_Manual/AntsdrU200_First boot check
+   ANTSDR_U200_Reference_Manual/AntsdrU200_First_boot_check
 .. toctree::
    :maxdepth:1
    :titlesonly:

@@ -13,23 +13,23 @@ U220
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual
+   ANTSDR_U220_Reference_Manual/AntsdrU220_Reference_Manual_cn
 
 .. toctree::
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U220_Reference_Manual/AntsdrU220_RF_parameters
+   ANTSDR_U220_Reference_Manual/AntsdrU220_RF_parameters_cn
 .. toctree::
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U220_Reference_Manual/AntsdrU220_First boot check
+   ANTSDR_U220_Reference_Manual/AntsdrU220_First_boot_check_cn
 .. toctree::
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U220_Reference_Manual/AntsdrU220_gnuradio
+   ANTSDR_U220_Reference_Manual/AntsdrU220_gnuradio_cn
 
 
 U200 
@@ -39,20 +39,20 @@ U200
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U200_Reference_Manual/AntsdrU200_Reference_Manual
+   ANTSDR_U200_Reference_Manual/AntsdrU200_Reference_Manual_cn
 
 .. toctree::
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U200_Reference_Manual/AntsdrU200_RF_parameters
+   ANTSDR_U200_Reference_Manual/AntsdrU200_RF_parameters_cn
 .. toctree::
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U200_Reference_Manual/AntsdrU200_First boot check
+   ANTSDR_U200_Reference_Manual/AntsdrU200_First_boot_check_cn
 .. toctree::
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U200_Reference_Manual/AntsdrU200_gnuradio
+   ANTSDR_U200_Reference_Manual/AntsdrU200_gnuradio_cn
