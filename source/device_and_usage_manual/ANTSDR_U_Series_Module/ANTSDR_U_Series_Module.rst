@@ -1,10 +1,20 @@
+Get Started
+=======================
 
-If you want to get started quickly, please see **Unpacking examination
-**.
+.. raw:: html
 
-If you want to learn about hardware parameters, please see the **Hardware manual**. 
+    <a href="../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U_Series_Module.html"> [中文] </a>
 
-If you want to know the RF parameters, please see **RF parameters**.
+This document is designed to help you quickly get started with using ANTSDR, including both its software and hardware components.
+
+For a quick introduction, please refer to the **Unboxing and Inspection**.
+You can find detailed unboxing and setup instructions for different models here:
+:doc:`E310 <ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination>` ,
+:doc:`E200 <ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination>` .
+To learn more about the hardware specifications, please refer to the **Hardware Manual**.
+For detailed RF specifications, please consult the **RF Parameters**.
+
+ANTSDR offers outstanding power efficiency, RF performance, stability, versatility, and reliability, making it well-suited for a wide range of application scenarios and power consumption requirements.
 
 U220 
 ===============================
@@ -24,7 +34,7 @@ U220
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U220_Reference_Manual/AntsdrU220_First_boot_check
+   ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination
 .. toctree::
    :maxdepth:1
    :titlesonly:
@@ -50,7 +60,7 @@ U200
    :maxdepth:1
    :titlesonly:
 
-   ANTSDR_U200_Reference_Manual/AntsdrU200_First_boot_check
+   ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination
 .. toctree::
    :maxdepth:1
    :titlesonly:
