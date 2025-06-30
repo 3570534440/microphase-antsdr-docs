@@ -94,7 +94,11 @@ E310
 
    ANTSDR_E310_Reference_Manual/set_the_iio_firmware_ip
 
+.. toctree::
+   :maxdepth:2
+   :titlesonly:
 
+   ANTSDR_E310_Reference_Manual/set_gpio
 E200 
 =======================
 .. toctree::
@@ -264,3 +268,9 @@ E316
    :titlesonly:
 
    ANTSDR_E316_Reference_Manual/set_the_iio_firmware_ip
+
+.. toctree::
+   :maxdepth:2
+   :titlesonly:
+
+   ANTSDR_E316_Reference_Manual/set_gpio  
