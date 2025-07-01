@@ -1,6 +1,6 @@
 ## U200 开箱检查
 
-[[English]](../../../../device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU220_Unpacking_examination.html)
+[[English]](../../../../device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination.html)
 
 ### 1. 概述
 

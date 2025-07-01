@@ -1,6 +1,6 @@
 ## U200 Unboxing and Inspection
 
-[[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU220_Unpacking_examination_cn.html)
+[[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U200_Reference_Manual/AntsdrU200_Unpacking_examination_cn.html)
 
 ### 1. Overview
 
