@@ -2,7 +2,7 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U220_Reference_Manual/AntsdrU220_gnuradio_cn.html)
 
-### 1. Overview
+### Overview
 
 **[GNU Radio](https://www.gnuradio.org/)** is a free and open-source software development toolkit that provides signal processing blocks for implementing software-defined radios and signal processing systems. It can be used with external RF hardware to create software-defined radio systems or without hardware in a simulation-like environment. GNU Radio is widely used in amateur, academic, and commercial settings to support wireless communications research and the development of real-world radio systems.
 
@@ -11,7 +11,7 @@ GNU Radio offers a comprehensive framework for developing and running software r
 As with all software-defined radio systems, reconfigurability is a key feature. GNU Radio's open interfaces make it easy to integrate users' own radio equipment into the GNU Radio ecosystem without designing for specific hardware.
 
 
-#### ● Installing System Packages
+### Installing System Packages
 Before installing the Pluto SDR driver, make sure to install the required dependencies using the following commands:
 ```
 sudo apt install libxml2 libxml2-dev bison flex cmake git libaio-dev libboost-all-dev

@@ -2,51 +2,45 @@
 
 [[中文]](../../../cn/device_and_usage_manual/ANTSDR_U_Series_Module/ANTSDR_U220_Reference_Manual/AntsdrU220_Unpacking_examination_cn.html)
 
-### 1. Overview
+### Overview
 
-The U220 is a software-defined radio (SDR) platform designed to meet the needs of makers, radio enthusiasts, and professional users alike. It supports wideband RF transceiving from 70 MHz to 6 GHz, enabling a wide range of modulation schemes and signal processing applications. With extensive support from open-source projects and comprehensive learning materials, users u220 can explore applications in the fields of communications, spectrum monitoring, etc, and more—greatly lowering the barrier to SDR development.
+The U220 is a software-defined radio (SDR) platform designed to meet the needs of makers, radio enthusiasts, and professional users alike. It supports wideband RF transceiving from 70 MHz to 6 GHz, enabling a wide range of modulation schemes and signal processing applications. With extensive support from open-source projects and comprehensive learning materials, users can explore applications in communications, spectrum monitoring, and more using the U220 — greatly lowering the barrier to SDR development.
 
 The U220 can serve as a practical alternative to the USRP B210 in many scenarios, offering dual-channel full-duplex capability, GPSDO-based precision synchronization, and external clock input support for multi-channel coordination or distributed deployments. It also provides standardized driver interfaces and is compatible with mainstream software platforms such as GNU Radio, SDRangel. Combining high performance with cost-effectiveness, the U220 is an ideal SDR solution for research, education, and industrial applications.
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220.jpg)
 
-### 2. Item List
+### Item List
 
-Thank you for purchasing the ANTSDR series software-defined radio platform from MicroPhase Technology Co., Ltd. Upon receiving your ANTSDR U220 (Standard Edition), please open the accessory package, which should include the following items
+Thank you for purchasing the ANTSDR series software-defined radio platform from MicroPhase Technology Co., Ltd.
+
+Upon receiving your ANTSDR U220 (Standard Edition), please open the accessory package, which should include the following items: 
 
 - ANTSDR Software-Defined Radio: ×1
-
 - USB Data Cable: ×1
-
-- Short Rubber Antennas: ×2
-
-- Tray Antenna: ×1
-
-After unpacking, the next step is to verify the SDR device model
+- Rubber Antennas: ×2
 
 
-### Windows
+### Windows Setup and Test
 
 
 ANTSDR runs firmware compatible with USRP UHD, and during use, it is primarily operated through software that supports the USRP B210. First, connect the device to your computer via a USB 3.0 port—these are usually marked in blue, though this may vary depending on the computer model. Then, right-click on the Start Menu and open Device Manager.
 
-In the "Other Devices" section, you should see a device named WestBridge, indicating that the USB driver is not yet installed. Inside the provided documentation under the firmware directory, you will find a compressed file named erllc_uhd_winusb_driver. Extract it to obtain the installer package.
+In the "Other Devices" section, you should see a device named `WestBridge`, indicating that the USB driver is not yet installed. Inside the provided documentation under the `firmware` directory, you will find a compressed file named `erllc_uhd_winusb_driver`. Extract it to obtain the installer package.
 
 ![u220_west](./AntsdrU220_Reference_Manual.assets/u220_west.png)
 
 Next, double-click the device and select "Update driver", then choose "Browse my computer for drivers."
-Select the erllc_uhd_winusb_driver folder extracted from the provided package.
+Browse to and select the extracted `erllc_uhd_winusb_driver` folder.
 
 After clicking "Next," the driver installation will begin. Once successfully installed, the USRP device will appear in the Device Manager
 
 ![u220](./AntsdrU220_Reference_Manual.assets/u220_usrp.png)
 
-This indicates that the USB driver has been successfully installed .
-
 #### UHD Driver Installation
 
 After installing the USB device, the next step is to install the UHD driver.
-In the provided firmware directory, locate the windows folder and right-click the application to run it as administrator.
+In the provided firmware directory, locate the `windows` folder and right-click the application to run it as administrator.
 
 ![u220](./AntsdrU220_Reference_Manual.assets/u220_windows_driver.png)
 
@@ -55,21 +49,21 @@ Select the option to add UHD to the system environment variables.
 ![u220](./AntsdrU220_Reference_Manual.assets/U220_add_path.png)
 
 You should now see the UHD firmware in the Program Files directory on drive C.
-Copy the libusb-1.0.dll file (as shown in the image) to the UHD/bin directory.
+Copy the `libusb-1.0.dll` file (as shown in the image) to the `UHD/bin` directory.
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220uhd_bin.png)
 
-Next, go to the UHD/share directory and create a new folder named image.
-Copy the usrp_b200_fw.hex file (as shown in the image) into the image folder.
+Next, go to the `UHD/share` directory and create a new folder named image.
+Copy the `usrp_b200_fw.hex file` (as shown in the image) into the image folder.
 
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220_hex.png)
 
-Then, copy the usrp_b210_fpga.bin firmware file for the U220 into the same image folder.Edit your system environment variables to add the full path of the image folder to the system PATH.
+Then, copy the `usrp_b210_fpga.bin` firmware file for the U220 into the same image folder. Edit your system environment variables to add the full path of the image folder to the system PATH.
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220_path.png)
 
-In the UHD/bin directory, connect the device to a USB 3.0 port on your PC, then open a command prompt.
+In the `UHD/bin` directory, connect the device to a USB 3.0 port on your PC, then open a command prompt.
 
 ![U220](./AntsdrU220_Reference_Manual.assets/find_u220.png)
 
@@ -88,7 +82,7 @@ The installation package for sdrAngel is already included in the windows folder 
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220_sdrangle.png)
 
-Copy uhd.dll in UHD/bin to the installation directory of sdrangel and replace the original uhd.dll
+Copy `uhd.dll` in `UHD/bin` to the installation directory of sdrangel and replace the original uhd.dll
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220_dll.png)
 
@@ -99,7 +93,7 @@ Open sdrangel
 
 ![U220](./AntsdrU220_Reference_Manual.assets/SDRangle_device.png)
 
-If there is no u220 device, please check whether the driver is installed successfully and whether the device is powered and restart the software.
+If the U220 device does not appear, ensure the driver is correctly installed, the device is powered on, and try restarting the software.
 
 After successful connection, select RX2 as the receiver and select the center frequency. Here we can test the device through FM radio stations
 
@@ -111,7 +105,7 @@ Then add an FM demodulator
 
 ![U220](./AntsdrU220_Reference_Manual.assets/U220_FM.png)
 
-Select Broadcast FM Demodulator
+Select **Broadcast FM Demodulator**.
 
 At this point, you can hear the sound, but it is not clear, so you need to adjust the receiving frequency to the radio signal. In my case, there is a radio station at 100.1Mhz.
 
@@ -119,13 +113,11 @@ At this point, you can hear the sound, but it is not clear, so you need to adjus
 
 Next, you can hear the sound from the radio. At this point, the unpacking test is complete.
 
-### ubuntu
-
-
+### Ubuntu
 
 You can find this project on GitHub: [ANTSDR UHD](https://github.com/MicroPhase/antsdr_uhd/blob/master/host/README.md). Different versions have different differences.
 
-### Build on Ubuntu
+#### Build on Ubuntu
 #### Build Dependencies
 You can install all the dependencies through the package manager:
 
@@ -162,7 +154,7 @@ sudo ./uhd_images_downloader.py
 ```
 
 #### Replace firmware
-Replace the **usrp_b210_fpga.bin** firmware of U220 in the /usr/local/share/uhd/images/ directory
+Replace the **usrp_b210_fpga.bin** firmware of U220 in the `/usr/local/share/uhd/images/ `directory
 
 ### Test with U220
 run the command `uhd_usrp_probe`. An example output is shown below:
