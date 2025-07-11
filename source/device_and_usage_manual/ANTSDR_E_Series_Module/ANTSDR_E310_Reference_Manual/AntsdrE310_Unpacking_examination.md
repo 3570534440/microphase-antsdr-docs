@@ -18,7 +18,7 @@ Thank you for purchasing the ANTSDR series SDR platform from MicroPhase Technolo
 
 - USB data cable: X2 
 
-- Short rubber stick antenna: X2
+- rubber stick antenna: X2
 
 - Tray antenna: X1
 
