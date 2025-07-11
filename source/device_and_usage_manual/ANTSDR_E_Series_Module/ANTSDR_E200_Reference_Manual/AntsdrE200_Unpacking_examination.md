@@ -16,7 +16,7 @@ Thank you for purchasing the ANTSDR series SDR platform from MicroPhase Technolo
 
 - USB Data Cables: X1 
 
-- Short Rubber Antennas: X2
+- Rubber Antennas: X2
 
 - Card Reader: X1
 
